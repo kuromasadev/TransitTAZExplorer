@@ -1,0 +1,43 @@
+{
+	"folders": {},
+	"connections": {
+		"csvjdbc-19665e2d87a-7032037da9c4f1db": {
+			"provider": "generic",
+			"driver": "csvjdbc",
+			"name": "hgac_fc",
+			"save-password": true,
+			"show-system-objects": true,
+			"configuration": {
+				"database": "E:\\github-files\\TransitTAZExplorer\\RAW\\hgac_fc",
+				"url": "jdbc:relique:csv:E:\\github-files\\TransitTAZExplorer\\RAW\\hgac_fc",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"properties": {
+					"quotechar": "\"",
+					"charset": "UTF-8",
+					"separator": ",",
+					"fileExtension": ".csv",
+					"suppressHeaders": "false"
+				},
+				"auth-model": "native"
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"smart-commit": false,
+			"smart-commit-recover": true,
+			"auto-close-transactions": true,
+			"close-transactions-period": 1800,
+			"auto-close-connections": true,
+			"close-connections-period": 14400
+		}
+	}
+}

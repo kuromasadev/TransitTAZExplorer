@@ -1,0 +1,42 @@
+{
+	"folders": {},
+	"connections": {
+		"csvjdbc-19665d898b9-65a9e6e26e8621c3": {
+			"provider": "generic",
+			"driver": "csvjdbc",
+			"name": "RAW",
+			"save-password": true,
+			"configuration": {
+				"database": "E:\\github-files\\TransitTAZExplorer\\RAW",
+				"url": "jdbc:relique:csv:E:\\github-files\\TransitTAZExplorer\\RAW",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"properties": {
+					"quotechar": "\"",
+					"charset": "UTF-8",
+					"separator": ",",
+					"fileExtension": ".csv",
+					"suppressHeaders": "false"
+				},
+				"auth-model": "native"
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"smart-commit": false,
+			"smart-commit-recover": true,
+			"auto-close-transactions": true,
+			"close-transactions-period": 1800,
+			"auto-close-connections": true,
+			"close-connections-period": 14400
+		}
+	}
+}
