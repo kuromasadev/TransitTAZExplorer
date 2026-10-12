@@ -30,15 +30,15 @@ Previous goal-turn classification: progress. The project ingestion established s
 | Transit destinations | 26 checked timetable route lists; direct destination areas, route numbers, official schedule links | Katy, Addicks and Kingwood flows exercised; Addicks Downtown/TMC split verified |
 | Mobile/tablet layout | Responsive layout, no document-level horizontal overflow at 390 px | Browser render inspected; viewport reset after QA |
 | No live network dependency for browsing | Copied HTML under restrictive CSP and an opaque-origin `allow-scripts` sandbox; complete Katy flow to destinations | Passed with no console errors |
-| Open HTML directly on user's device | Browser automation explicitly blocks `file://` navigation | Pending user check; user selected “I’ll check it later” |
+| Open HTML directly on user's device | User confirmed on October 12, 2026: “It opens and the flow works” | Passed on user's device |
 | Run in actual SharePoint | User requested agnostic package; Microsoft Site Pages workflow documented | Not deployed or verified in tenant; depends on tenant HTML availability and external-link settings |
 
-Goal is blocked pending direct local opening on the user's device. The user selected “I’ll check it later.” The same verification blocker persisted across the delivery turn and two subsequent goal continuations; the package integrity audit added evidence but could not resolve direct-opening verification. No further authorized action can establish that result through the browser tool, whose explicit protocol policy forbids file URLs and workarounds. Do not mark the goal complete solely from HTTP or sandbox tests. No ongoing process or external job is being awaited. Resume when the user supplies the direct-opening result; investigate any reported defect.
+The user confirmed on October 12, 2026 that the packaged HTML opens directly and the five-step flow works. Together with the recorded functional, coverage, sandbox and package-integrity checks, this closes the remaining verification item for the storage-platform-agnostic delivery the user requested. The goal is complete for that authorized scope. Actual SharePoint deployment remains unperformed, as disclosed; the user requested a copy-ready package rather than tenant deployment. No ongoing process or external job is being awaited.
 
 No failure of the application has been observed. The remaining local-opening verification is a tool protocol limitation, not an application error. The request for a user check explicitly explained that the browser tool permits HTTP/HTTPS only.
 
 ## Next evidence or inputs
 
-1. User opens the packaged HTML directly and confirms or reports a defect. Resolve any defect before closing the goal.
+1. Direct opening and flow confirmed by the user; no defect reported.
 2. Replace provisional corridor/proximity associations once driving-time or catchment inputs are supplied; those future inputs are not required for this initial release.
 3. Confirm facility location/address vintage during operational rollout and refresh route evidence when service changes.
