@@ -1,0 +1,9 @@
+[
+ {"id":"west","name":"Katy Freeway","road":"I-10 West","color":"#087d79","facilities":[12,13,4],"routes":[221,222,228,229,298]},
+ {"id":"northwest","name":"Northwest Freeway","road":"US 290","color":"#4168b2","facilities":[18,17,1],"routes":[216,217,219]},
+ {"id":"north","name":"North Freeway","road":"I-45 North","color":"#7955ac","facilities":[26,27,94],"routes":[202,204,209,212]},
+ {"id":"northeast","name":"Eastex Freeway","road":"I-69 / US 59 North","color":"#bd6928","facilities":[3,28,29],"routes":[255,256,257,259]},
+ {"id":"east","name":"East Freeway","road":"I-10 East","color":"#b84b64","facilities":[20,2],"routes":[236,237]},
+ {"id":"southeast","name":"Gulf Freeway","road":"I-45 South","color":"#347d4c","facilities":[22,23,24,33,93],"routes":[244,247,249,297]},
+ {"id":"southwest","name":"Southwest Freeway & Missouri City","road":"I-69 / US 59 South · SH 6","color":"#816747","facilities":[9,10,11],"routes":[265,269,270,292]}
+]

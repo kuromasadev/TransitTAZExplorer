@@ -1,0 +1,19 @@
+{
+  "result": "passed",
+  "tazReachable": 1239,
+  "originPaths": 203,
+  "sectors": 18,
+  "corridors": 7,
+  "facilities": 22,
+  "routes": 26,
+  "htmlBytes": 480966,
+  "checks": [
+    "offline assets",
+    "geographic distance",
+    "all origin paths",
+    "global facility ranking",
+    "route/facility consistency",
+    "current service regressions",
+    "selection reset"
+  ]
+}

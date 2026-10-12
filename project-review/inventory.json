@@ -1,0 +1,7124 @@
+[
+  {
+    "path": ".gitattributes",
+    "bytes": 66,
+    "text": "# Auto detect text files and perform LF normalization\n* text=auto\n"
+  },
+  {
+    "path": "BI/PnR_Explorer_v01.twb",
+    "bytes": 540256,
+    "datasources": [
+      {
+        "name": "federated.1mpq5581j08h8d19smfds0j3x6tf",
+        "caption": "OD+ (Multiple Connections)",
+        "connections": [
+          {
+            "class": "federated"
+          },
+          {
+            "class": "excel-direct",
+            "cleaning": "no",
+            "compat": "no",
+            "dataRefreshTime": "",
+            "filename": "C:/Users/ap62/OneDrive - Metropolitan Transit Authority of Harris County/Planning/projects/SYSTEM/FY25_PnR Explorer/pnr_esrigc/TAZ DATA.xlsx",
+            "interpretationMode": "0",
+            "password": "",
+            "server": "",
+            "validate": "no"
+          },
+          {
+            "class": "ogrdirect",
+            "directory": "C:/Users/ap62/OneDrive - Metropolitan Transit Authority of Harris County/Planning/projects/SYSTEM/FY25_PnR Explorer/pnr_esrigj",
+            "filename": "METRO_Pln_TAZ48d00.json",
+            "password": "",
+            "server": "",
+            "tablename": ""
+          },
+          {
+            "class": "excel-direct",
+            "cleaning": "no",
+            "compat": "no",
+            "dataRefreshTime": "",
+            "filename": "C:/Users/ap62/OneDrive - Metropolitan Transit Authority of Harris County/Planning/projects/SYSTEM/FY25_PnR Explorer/pnr_plnfmm/ALL PNR.xlsx",
+            "interpretationMode": "0",
+            "password": "",
+            "server": "",
+            "validate": "no"
+          },
+          {
+            "class": "excel-direct",
+            "cleaning": "yes",
+            "compat": "no",
+            "dataRefreshTime": "",
+            "filename": "C:/Users/ap62/OneDrive - Metropolitan Transit Authority of Harris County/Planning/projects/SYSTEM/FY25_PnR Explorer/pnr_esrigc/community_analyst_export.xlsx",
+            "interpretationMode": "1",
+            "password": "",
+            "server": "",
+            "validate": "no"
+          }
+        ],
+        "relations": [
+          {
+            "connection": "excel-direct.0v32h9e0l9o2wa14y1gzv1vgk3j0",
+            "name": "OD",
+            "table": "[OD$]",
+            "type": "table"
+          },
+          {
+            "connection": "excel-direct.1pce7xb00vjco31fd39uj1xki9bd",
+            "name": "Description Table",
+            "table": "['Description Table$']",
+            "type": "table"
+          },
+          {
+            "connection": "excel-direct.1pce7xb00vjco31fd39uj1xki9bd",
+            "name": "Housing and Households",
+            "table": "['Housing and Households$']",
+            "type": "table"
+          },
+          {
+            "connection": "excel-direct.1pce7xb00vjco31fd39uj1xki9bd",
+            "name": "Income Table",
+            "table": "['Income Table$']",
+            "type": "table"
+          },
+          {
+            "connection": "excel-direct.1pce7xb00vjco31fd39uj1xki9bd",
+            "name": "Income Tier per Household",
+            "table": "['Income Tier per Household$']",
+            "type": "table"
+          },
+          {
+            "connection": "excel-direct.1pce7xb00vjco31fd39uj1xki9bd",
+            "name": "Journey to Work",
+            "table": "['Journey to Work$']",
+            "type": "table"
+          },
+          {
+            "connection": "excel-direct.1pce7xb00vjco31fd39uj1xki9bd",
+            "name": "Key Demographic by Generation",
+            "table": "['Key Demographic by Generation$']",
+            "type": "table"
+          },
+          {
+            "connection": "excel-direct.1pce7xb00vjco31fd39uj1xki9bd",
+            "name": "Housing and Households1",
+            "table": "['Housing and Households$']",
+            "type": "table"
+          },
+          {
+            "connection": "ogrdirect.0922yh21rztdyn14wuqq81uiwdhg",
+            "name": "METRO_Pln_DissolvedOD.json",
+            "table": "[METRO_Pln_DissolvedOD.json]",
+            "type": "table"
+          },
+          {
+            "connection": "excel-direct.1ji9dmp18nncxi0zktgtz0c9vr82",
+            "name": "SUMMARY ApproxRelate",
+            "table": "[SUMMARY$ApproxRelate]",
+            "type": "table"
+          },
+          {
+            "connection": "excel-direct.1ji9dmp18nncxi0zktgtz0c9vr82",
+            "name": "DATA DATA_PNR",
+            "table": "[DATA$DATA_PNR]",
+            "type": "table"
+          },
+          {
+            "connection": "excel-direct.1ji9dmp18nncxi0zktgtz0c9vr82",
+            "name": "DATA BUSROUTES",
+            "table": "[DATA$BUSROUTES]",
+            "type": "table"
+          },
+          {
+            "connection": "ogrdirect.0922yh21rztdyn14wuqq81uiwdhg",
+            "name": "METRO_PnR_Routes.json",
+            "table": "[METRO_PnR_Routes.json]",
+            "type": "table"
+          },
+          {
+            "connection": "ogrdirect.0922yh21rztdyn14wuqq81uiwdhg",
+            "name": "METRO_PnR_pt.geojson",
+            "table": "[METRO_PnR_pt.geojson]",
+            "type": "table"
+          },
+          {
+            "connection": "ogrdirect.0922yh21rztdyn14wuqq81uiwdhg",
+            "name": "METRO_Pln_TAZ48d00.json",
+            "table": "[METRO_Pln_TAZ48d00.json]",
+            "type": "table"
+          },
+          {
+            "connection": "excel-direct.0v32h9e0l9o2wa14y1gzv1vgk3j0",
+            "name": "TAZ",
+            "table": "[TAZ$]",
+            "type": "table"
+          },
+          {
+            "connection": "excel-direct.0v32h9e0l9o2wa14y1gzv1vgk3j0",
+            "name": "SECT",
+            "table": "[SECT$]",
+            "type": "table"
+          },
+          {
+            "connection": "excel-direct.0v32h9e0l9o2wa14y1gzv1vgk3j0",
+            "name": "relate1",
+            "table": "[relate1$]",
+            "type": "table"
+          },
+          {
+            "connection": "ogrdirect.0922yh21rztdyn14wuqq81uiwdhg",
+            "name": "EXTERNAL_HGAC_Forecast_CT.json",
+            "table": "[EXTERNAL_HGAC_Forecast_CT.json]",
+            "type": "table"
+          },
+          {
+            "connection": "ogrdirect.0922yh21rztdyn14wuqq81uiwdhg",
+            "name": "EXTERNAL_HGAC_OA_CT.json",
+            "table": "[EXTERNAL_HGAC_OA_CT.json]",
+            "type": "table"
+          },
+          {
+            "connection": "excel-direct.1ji9dmp18nncxi0zktgtz0c9vr82",
+            "name": "DATA BUSROUTES",
+            "table": "[DATA$BUSROUTES]",
+            "type": "table"
+          },
+          {
+            "connection": "excel-direct.1ji9dmp18nncxi0zktgtz0c9vr82",
+            "name": "DATA DATA_PNR",
+            "table": "[DATA$DATA_PNR]",
+            "type": "table"
+          },
+          {
+            "connection": "excel-direct.1pce7xb00vjco31fd39uj1xki9bd",
+            "name": "Description Table",
+            "table": "['Description Table$']",
+            "type": "table"
+          },
+          {
+            "connection": "ogrdirect.0922yh21rztdyn14wuqq81uiwdhg",
+            "name": "EXTERNAL_HGAC_Forecast_CT.json",
+            "table": "[EXTERNAL_HGAC_Forecast_CT.json]",
+            "type": "table"
+          },
+          {
+            "connection": "ogrdirect.0922yh21rztdyn14wuqq81uiwdhg",
+            "name": "EXTERNAL_HGAC_OA_CT.json",
+            "table": "[EXTERNAL_HGAC_OA_CT.json]",
+            "type": "table"
+          },
+          {
+            "connection": "excel-direct.1pce7xb00vjco31fd39uj1xki9bd",
+            "name": "Housing and Households1",
+            "table": "['Housing and Households$']",
+            "type": "table"
+          },
+          {
+            "connection": "excel-direct.1pce7xb00vjco31fd39uj1xki9bd",
+            "name": "Housing and Households",
+            "table": "['Housing and Households$']",
+            "type": "table"
+          },
+          {
+            "connection": "excel-direct.1pce7xb00vjco31fd39uj1xki9bd",
+            "name": "Income Table",
+            "table": "['Income Table$']",
+            "type": "table"
+          },
+          {
+            "connection": "excel-direct.1pce7xb00vjco31fd39uj1xki9bd",
+            "name": "Income Tier per Household",
+            "table": "['Income Tier per Household$']",
+            "type": "table"
+          },
+          {
+            "connection": "excel-direct.1pce7xb00vjco31fd39uj1xki9bd",
+            "name": "Journey to Work",
+            "table": "['Journey to Work$']",
+            "type": "table"
+          },
+          {
+            "connection": "excel-direct.1pce7xb00vjco31fd39uj1xki9bd",
+            "name": "Key Demographic by Generation",
+            "table": "['Key Demographic by Generation$']",
+            "type": "table"
+          },
+          {
+            "connection": "ogrdirect.0922yh21rztdyn14wuqq81uiwdhg",
+            "name": "METRO_Pln_DissolvedOD.json",
+            "table": "[METRO_Pln_DissolvedOD.json]",
+            "type": "table"
+          },
+          {
+            "connection": "ogrdirect.0922yh21rztdyn14wuqq81uiwdhg",
+            "name": "METRO_Pln_TAZ48d00.json",
+            "table": "[METRO_Pln_TAZ48d00.json]",
+            "type": "table"
+          },
+          {
+            "connection": "ogrdirect.0922yh21rztdyn14wuqq81uiwdhg",
+            "name": "METRO_PnR_Routes.json",
+            "table": "[METRO_PnR_Routes.json]",
+            "type": "table"
+          },
+          {
+            "connection": "ogrdirect.0922yh21rztdyn14wuqq81uiwdhg",
+            "name": "METRO_PnR_pt.geojson",
+            "table": "[METRO_PnR_pt.geojson]",
+            "type": "table"
+          },
+          {
+            "connection": "excel-direct.0v32h9e0l9o2wa14y1gzv1vgk3j0",
+            "name": "OD",
+            "table": "[OD$]",
+            "type": "table"
+          },
+          {
+            "connection": "excel-direct.0v32h9e0l9o2wa14y1gzv1vgk3j0",
+            "name": "SECT",
+            "table": "[SECT$]",
+            "type": "table"
+          },
+          {
+            "connection": "excel-direct.1ji9dmp18nncxi0zktgtz0c9vr82",
+            "name": "SUMMARY ApproxRelate",
+            "table": "[SUMMARY$ApproxRelate]",
+            "type": "table"
+          },
+          {
+            "connection": "excel-direct.0v32h9e0l9o2wa14y1gzv1vgk3j0",
+            "name": "TAZ",
+            "table": "[TAZ$]",
+            "type": "table"
+          },
+          {
+            "connection": "excel-direct.0v32h9e0l9o2wa14y1gzv1vgk3j0",
+            "name": "relate1",
+            "table": "[relate1$]",
+            "type": "table"
+          }
+        ],
+        "calculations": []
+      }
+    ],
+    "worksheets": [
+      "DATA",
+      "MAP",
+      "Sheet 3",
+      "Sheet 4"
+    ],
+    "dashboards": [
+      "Dashboard 1"
+    ],
+    "actions": []
+  },
+  {
+    "path": "BI/PnR_Explorer_v02.twb",
+    "bytes": 807249,
+    "datasources": [
+      {
+        "name": "federated.1b2ur510znzo0s17dgc1w08pytke",
+        "caption": "METRO_PnR_Routes.json1+ (Multiple Connections)",
+        "connections": [
+          {
+            "class": "federated"
+          },
+          {
+            "class": "excel-direct",
+            "cleaning": "yes",
+            "compat": "no",
+            "dataRefreshTime": "",
+            "filename": "E:/github-files/TransitTAZExplorer/RAW/pnr_esrigc/TAZ DATA.xlsx",
+            "interpretationMode": "1",
+            "password": "",
+            "server": "",
+            "validate": "no",
+            "workgroup-auth-mode": "as-is"
+          },
+          {
+            "class": "ogrdirect",
+            "directory": "E:/github-files/TransitTAZExplorer/RAW/pnr_esrigj",
+            "filename": "METRO_Pln_TAZ48d00.json",
+            "password": "",
+            "server": "",
+            "tablename": "",
+            "workgroup-auth-mode": "as-is"
+          },
+          {
+            "class": "excel-direct",
+            "cleaning": "no",
+            "compat": "no",
+            "dataRefreshTime": "",
+            "filename": "E:/github-files/TransitTAZExplorer/RAW/pnr_plnfmm/ALL PNR.xlsx",
+            "interpretationMode": "0",
+            "password": "",
+            "server": "",
+            "validate": "no",
+            "workgroup-auth-mode": "as-is"
+          },
+          {
+            "access_mode": "readonly",
+            "author-locale": "en_US",
+            "class": "hyper",
+            "dbname": "C:/Users/MOTHER~1/AppData/Local/Temp/TableauTemp/#TableauTemp_1f3cq3x0jotjo018sfgyy0d63s9y.hyper",
+            "default-settings": "hyper",
+            "schema": "Extract",
+            "sslmode": "",
+            "tablename": "Extract",
+            "update-time": "04/23/2025 04:51:11 AM",
+            "username": "tableau_internal_user"
+          }
+        ],
+        "relations": [
+          {
+            "type": "collection"
+          },
+          {
+            "connection": "ogrdirect.01mf34f0d8b5bp10u76w60l72dwv",
+            "name": "METRO_PnR_Routes.json1",
+            "table": "[METRO_PnR_Routes.json]",
+            "type": "table"
+          },
+          {
+            "connection": "excel-direct.10x7u4w1peaeg91dq26ip11srkp7",
+            "name": "DATA BUSROUTES",
+            "table": "[DATA$BUSROUTES]",
+            "type": "table"
+          },
+          {
+            "type": "collection"
+          },
+          {
+            "name": "METRO_PnR_Routes.json_EC76E19C488C479CB4B7F434D2C18146",
+            "table": "[Extract].[METRO_PnR_Routes.json_EC76E19C488C479CB4B7F434D2C18146]",
+            "type": "table"
+          },
+          {
+            "name": "DATA$BUSROUTES_B565E015E6254788A63F2F8B7227A658",
+            "table": "[Extract].[DATA$BUSROUTES_B565E015E6254788A63F2F8B7227A658]",
+            "type": "table"
+          },
+          {
+            "connection": "excel-direct.10x7u4w1peaeg91dq26ip11srkp7",
+            "name": "DATA BUSROUTES",
+            "table": "[DATA$BUSROUTES]",
+            "type": "table"
+          },
+          {
+            "name": "DATA$BUSROUTES_B565E015E6254788A63F2F8B7227A658",
+            "table": "[Extract].[DATA$BUSROUTES_B565E015E6254788A63F2F8B7227A658]",
+            "type": "table"
+          },
+          {
+            "connection": "excel-direct.10x7u4w1peaeg91dq26ip11srkp7",
+            "name": "DATA DATA_PNR",
+            "table": "[DATA$DATA_PNR]",
+            "type": "table"
+          },
+          {
+            "name": "DATA$DATA!PNR_584196208F5D4FBFBC88CD88BE346453",
+            "table": "[Extract].[DATA$DATA!PNR_584196208F5D4FBFBC88CD88BE346453]",
+            "type": "table"
+          },
+          {
+            "connection": "ogrdirect.01mf34f0d8b5bp10u76w60l72dwv",
+            "name": "EXTERNAL_HGAC_OA_CT.json",
+            "table": "[EXTERNAL_HGAC_OA_CT.json]",
+            "type": "table"
+          },
+          {
+            "name": "EXTERNAL_HGAC_OA_CT.json_91FB9ED683A24360BC6467E3F6415008",
+            "table": "[Extract].[EXTERNAL_HGAC_OA_CT.json_91FB9ED683A24360BC6467E3F6415008]",
+            "type": "table"
+          },
+          {
+            "connection": "ogrdirect.01mf34f0d8b5bp10u76w60l72dwv",
+            "name": "METRO_Pln_DissolvedOD.json",
+            "table": "[METRO_Pln_DissolvedOD.json]",
+            "type": "table"
+          },
+          {
+            "name": "METRO_Pln_DissolvedOD.json_A0B8742546E24158A87F2CA2EBCDED1E",
+            "table": "[Extract].[METRO_Pln_DissolvedOD.json_A0B8742546E24158A87F2CA2EBCDED1E]",
+            "type": "table"
+          },
+          {
+            "connection": "ogrdirect.01mf34f0d8b5bp10u76w60l72dwv",
+            "name": "METRO_Pln_TAZ48d00.json",
+            "table": "[METRO_Pln_TAZ48d00.json]",
+            "type": "table"
+          },
+          {
+            "name": "METRO_Pln_TAZ48d00.json_5480A95CC8094BCCB9A60A17CE7A6DCB",
+            "table": "[Extract].[METRO_Pln_TAZ48d00.json_5480A95CC8094BCCB9A60A17CE7A6DCB]",
+            "type": "table"
+          },
+          {
+            "connection": "ogrdirect.01mf34f0d8b5bp10u76w60l72dwv",
+            "name": "METRO_PnR_Routes.json1",
+            "table": "[METRO_PnR_Routes.json]",
+            "type": "table"
+          },
+          {
+            "name": "METRO_PnR_Routes.json_EC76E19C488C479CB4B7F434D2C18146",
+            "table": "[Extract].[METRO_PnR_Routes.json_EC76E19C488C479CB4B7F434D2C18146]",
+            "type": "table"
+          },
+          {
+            "connection": "ogrdirect.01mf34f0d8b5bp10u76w60l72dwv",
+            "name": "METRO_PnR_pt.geojson",
+            "table": "[METRO_PnR_pt.geojson]",
+            "type": "table"
+          },
+          {
+            "name": "METRO_PnR_pt.geojson_1E5DC609909D4BD49E406E71E01129AF",
+            "table": "[Extract].[METRO_PnR_pt.geojson_1E5DC609909D4BD49E406E71E01129AF]",
+            "type": "table"
+          },
+          {
+            "connection": "excel-direct.0yqpyio038tzwz1d2ycs50aempmd",
+            "name": "OD",
+            "table": "[OD$]",
+            "type": "table"
+          },
+          {
+            "name": "OD_B3A528D4C4A84890A36E82C94779BBC6",
+            "table": "[Extract].[OD_B3A528D4C4A84890A36E82C94779BBC6]",
+            "type": "table"
+          },
+          {
+            "connection": "excel-direct.0yqpyio038tzwz1d2ycs50aempmd",
+            "name": "SECT",
+            "table": "[SECT$]",
+            "type": "table"
+          },
+          {
+            "name": "SECT_89E5484A4F7B4F90A3C0D3DC6ECDBF94",
+            "table": "[Extract].[SECT_89E5484A4F7B4F90A3C0D3DC6ECDBF94]",
+            "type": "table"
+          },
+          {
+            "connection": "excel-direct.10x7u4w1peaeg91dq26ip11srkp7",
+            "name": "SUMMARY ApproxRelate",
+            "table": "[SUMMARY$ApproxRelate]",
+            "type": "table"
+          },
+          {
+            "name": "SUMMARY$ApproxRelate_8EC8EB58B610402B982DF589F153FE56",
+            "table": "[Extract].[SUMMARY$ApproxRelate_8EC8EB58B610402B982DF589F153FE56]",
+            "type": "table"
+          },
+          {
+            "connection": "excel-direct.0yqpyio038tzwz1d2ycs50aempmd",
+            "name": "TAZ",
+            "table": "[TAZ$]",
+            "type": "table"
+          },
+          {
+            "name": "TAZ_8B4960F45EC542FCB85084247A341812",
+            "table": "[Extract].[TAZ_8B4960F45EC542FCB85084247A341812]",
+            "type": "table"
+          },
+          {
+            "connection": "excel-direct.0yqpyio038tzwz1d2ycs50aempmd",
+            "name": "relate1",
+            "table": "[relate1$]",
+            "type": "table"
+          },
+          {
+            "name": "relate1_A109E825C7FD4839A1CF35E3EAC93925",
+            "table": "[Extract].[relate1_A109E825C7FD4839A1CF35E3EAC93925]",
+            "type": "table"
+          }
+        ],
+        "calculations": [
+          {
+            "name": "[Sector (group)]",
+            "formula": null
+          }
+        ]
+      }
+    ],
+    "worksheets": [
+      "OD",
+      "SECTOR",
+      "Sheet 4",
+      "TAZ"
+    ],
+    "dashboards": [
+      "FILTER MAP",
+      "MAIN",
+      "TAZ MAP"
+    ],
+    "actions": [
+      "<action caption=\"Filter 2 (generated)\" name=\"[Action2_057EE204AF384CAFA41B2131440E5079]\">\n      <activation auto-clear=\"true\" type=\"on-select\" />\n      <source dashboard=\"FILTER MAP\" type=\"sheet\" worksheet=\"SECTOR\" />\n      <command command=\"tsc:tsl-filter\">\n        <param name=\"special-fields\" value=\"all\" />\n        <param name=\"target\" value=\"FILTER MAP\" />\n      </command>\n    </action>\n    ",
+      "<action caption=\"Filter 1 (generated)\" name=\"[Action2_4545FAD94B6248998300095C88B5BDCB]\">\n      <activation auto-clear=\"true\" type=\"on-select\" />\n      <source dashboard=\"FILTER MAP\" type=\"sheet\" worksheet=\"OD\" />\n      <command command=\"tsc:tsl-filter\">\n        <param name=\"special-fields\" value=\"all\" />\n        <param name=\"target\" value=\"FILTER MAP\" />\n      </command>\n    </action>\n  "
+    ]
+  },
+  {
+    "path": "CODE/esri_arcgis_export.ipynb",
+    "bytes": 15577,
+    "cells": [
+      {
+        "type": "markdown",
+        "source": "# Community Analyst Data Translator\nTabular reports built in legacy Community Analyst can be exported (credit consumption) into excel files, which in turn can be normalized and turned into tables. This information is generated by running the report on a given geography within analyst, so it can be tied into a dashboard with ease.",
+        "output_types": []
+      },
+      {
+        "type": "markdown",
+        "source": "### dependencies",
+        "output_types": []
+      },
+      {
+        "type": "code",
+        "source": "import pandas as pd\nimport os\nimport warnings\nwarnings.simplefilter(\"ignore\", category=UserWarning)\nimport xlsxwriter",
+        "output_types": []
+      },
+      {
+        "type": "markdown",
+        "source": "### path\nin the CA report, theres 12 different tables, definition to capture each separate table",
+        "output_types": []
+      },
+      {
+        "type": "code",
+        "source": "# Initialize empty dataframes for each table with proper column names\ndescription_table = pd.DataFrame(columns=['Description', 'Value', 'OD_ID'])\nretail_spending_summary = pd.DataFrame(columns=['NAICS Code', 'Industry Summary', 'Spending Potential Index', 'Average Spent', 'Total', 'OD_ID'])\nspending_summary_by_naics = pd.DataFrame(columns=['NAICS Code', 'Industry Subsector & Group', 'Index', 'Average Spending', 'Total', 'OD_ID'])\nkey_demographic_indicators = pd.DataFrame(columns=['Indicator', 'Value', 'OD_ID'])\njourney_to_work = pd.DataFrame(columns=['Journey Type', 'Value', 'OD_ID'])\nvehicles_available = pd.DataFrame(columns=['Vehicle Availability', 'Value', 'OD_ID'])\nincome_table = pd.DataFrame(columns=['Income Range', 'Number of Households', 'OD_ID'])\nhousing_and_households = pd.DataFrame(columns=['Housing Category', 'Value', 'OD_ID'])\nincome_tier_per_household = pd.DataFrame(columns=['Income Tier', 'Number of Households', 'OD_ID'])\ntapestry_segments = pd.DataFrame(columns= ['Segment Code', 'Area Value','Harris County', 'Texas', 'United States','OD_ID'])\ntapestry_lifemode = pd.DataFrame(columns= ['Tapestry Lifemode', 'Households','HHs %', '% US HHs', 'Index', 'OD_ID'])\nkey_demographic_by_generation = pd.DataFrame(columns= ['Generation', 'Area Population', 'Harris County', 'OD_ID'])",
+        "output_types": []
+      },
+      {
+        "type": "code",
+        "source": "def extract_tables(file_path):\n    # Load the Excel file\n    excel_data = pd.ExcelFile(file_path)\n\n    # Load the sheet\n    sheet_name = excel_data.sheet_names[0]\n    df = excel_data.parse(sheet_name)\n\n    # Extract the OD_ID from the file name (extracting the number only)\n    od_id = ''.join(filter(str.isdigit, file_path.split('/')[-1].split('.')[0]))\n\n    # Table 1: Description Table\n    description_table = pd.DataFrame({\n        'Description': ['Title', 'OD Area', 'OD_ID', 'Area (square miles)'],\n        'Value': [\n            df.iloc[0, 0],\n            df.iloc[1, 0],\n            od_id,\n            ''.join(c for c in df.iloc[2, 0].split(':')[-1].strip() if c.isdigit() or c == '.')\n        ]\n    })\n    description_table['OD_ID'] = od_id\n\n    # Helper function to add OD_ID column\n    def add_od_id(table):\n        table['OD_ID'] = od_id\n        return table\n\n    # Table 2: Retail Spending Summary\n    retail_spending_summary = df.iloc[5:8, 0:5]\n    retail_spending_summary.columns = ['NAICS Code', 'Industry Summary', 'Spending Potential Index', 'Average Spent', 'Total']\n    retail_spending_summary = add_od_id(retail_spending_summary)\n\n    # Table 3: Spending Summary by NAICS\n    spending_summary_by_naics = df.iloc[10:37, 0:5]\n    spending_summary_by_naics.columns = ['NAICS Code', 'Industry Subsector & Group', 'Index', 'Average Spending', 'Total']\n    spending_summary_by_naics = add_od_id(spending_summary_by_naics)\n\n    # Table 4: Key Demographic Indicators\n    key_demographic_indicators = df.iloc[39:46, 0:2]\n    key_demographic_indicators.columns = ['Indicator', 'Value']\n    key_demographic_indicators = add_od_id(key_demographic_indicators)\n\n    # Table 5: Journey to Work\n    journey_to_work = df.iloc[48:52, 0:2]\n    journey_to_work.columns = ['Journey Type', 'Value']\n    journey_to_work = add_od_id(journey_to_work)\n\n    # Table 6: Vehicles Available in Households\n    vehicles_available = df.iloc[54:60, 0:2]\n    vehicles_available.columns = ['Vehicle Availability', 'Value']\n    vehicles_available = add_od_id(vehicles_available)\n\n    # Table 7: Income\n    income_table = df.iloc[62:65, 0:2]\n    income_table.columns = ['Income Range', 'Number of Households']\n    income_table = add_od_id(income_table)\n\n    # Table 8: Housing and Households\n    housing_and_households = df.iloc[67:72, 0:2]\n    housing_and_households.columns = ['Housing Category', 'Value']\n    housing_and_households = add_od_id(housing_and_households)\n\n    # Table 9: Income Tier per Household\n    income_tier_per_household = df.iloc[76:79, 0:2]\n    income_tier_per_household.columns = ['Income Tier', 'Number of Households']\n    income_tier_per_household = add_od_id(income_tier_per_household)\n\n    # Table 10: Tapestry Segments\n    tapestry_segments = df.iloc[84:118, 0:5]\n    tapestry_segments.columns = ['Segment Code', 'Area Value','Harris County', 'Texas', 'United States']\n    tapestry_segments = add_od_id(tapestry_segments)\n\n    # Table 11: Tapestry Lifemode\n    tapestry_lifemode = df.iloc[121:136, 0:5]\n    tapestry_lifemode.columns = ['Tapestry Lifemode', 'Households','HHs %', '% US HHs', 'Index']\n    tapestry_lifemode = add_od_id(tapestry_lifemode)\n\n    # Table 12: Key Demographic by Generation\n    key_demographic_by_generation = df.iloc[138:146, 0:3]\n    key_demographic_by_generation.columns = ['Generation', 'Area Population', 'Harris County']\n    key_demographic_by_generation = add_od_id(key_demographic_by_generation)\n\n    return {\n        'Description Table': description_table,\n        'Retail Spending Summary': retail_spending_summary,\n        'Spending Summary by NAICS': spending_summary_by_naics,\n        'Key Demographic Indicators': key_demographic_indicators,\n        'Journey to Work': journey_to_work,\n        'Vehicles Available': vehicles_available,\n        'Income Table': income_table,\n        'Housing and Households': housing_and_households,\n        'Income Tier per Household': income_tier_per_household,\n        'Tapestry Segments': tapestry_segments,\n        'Tapestry Lifemode': tapestry_lifemode,\n        'Key Demographic by Generation': key_demographic_by_generation\n    }",
+        "output_types": []
+      },
+      {
+        "type": "markdown",
+        "source": "### TEST 1",
+        "output_types": []
+      },
+      {
+        "type": "code",
+        "source": "test_path = '../ltsv_esrica/3.xlsx'",
+        "output_types": []
+      },
+      {
+        "type": "code",
+        "source": "try:\n    tables = extract_tables(test_path)\n    \n    # Append data to the pre-initialized dataframes\n    description_table = pd.concat([description_table, tables['Description Table']], ignore_index=True)\n    retail_spending_summary = pd.concat([retail_spending_summary, tables['Retail Spending Summary']], ignore_index=True)\n    spending_summary_by_naics = pd.concat([spending_summary_by_naics, tables['Spending Summary by NAICS']], ignore_index=True)\n    key_demographic_indicators = pd.concat([key_demographic_indicators, tables['Key Demographic Indicators']], ignore_index=True)\n    journey_to_work = pd.concat([journey_to_work, tables['Journey to Work']], ignore_index=True)\n    vehicles_available = pd.concat([vehicles_available, tables['Vehicles Available']], ignore_index=True)\n    income_table = pd.concat([income_table, tables['Income Table']], ignore_index=True)\n    housing_and_households = pd.concat([housing_and_households, tables['Housing and Households']], ignore_index=True)\n    income_tier_per_household = pd.concat([income_tier_per_household, tables['Income Tier per Household']], ignore_index=True)\n    tapestry_segments = pd.concat([tapestry_segments, tables['Tapestry Segments']], ignore_index=True)\n    tapestry_lifemode = pd.concat([tapestry_lifemode, tables['Tapestry Lifemode']], ignore_index=True)\n    key_demographic_by_generation = pd.concat([key_demographic_by_generation, tables['Key Demographic by Generation']], ignore_index=True)\nexcept Exception as e:\n    print(f\"Error processing file {test_path}: {str(e)}\")",
+        "output_types": [
+          "stream"
+        ]
+      },
+      {
+        "type": "markdown",
+        "source": "### full export",
+        "output_types": []
+      },
+      {
+        "type": "code",
+        "source": "directory_path = './ltsv_esrica'",
+        "output_types": []
+      },
+      {
+        "type": "code",
+        "source": "for file_path in [os.path.join(directory_path, f) for f in os.listdir(directory_path) if f.endswith('.xlsx')]:\n    try:\n        tables = extract_tables(file_path)\n        \n        # Append data to the pre-initialized dataframes\n        description_table = pd.concat([description_table, tables['Description Table']], ignore_index=True)\n        retail_spending_summary = pd.concat([retail_spending_summary, tables['Retail Spending Summary']], ignore_index=True)\n        spending_summary_by_naics = pd.concat([spending_summary_by_naics, tables['Spending Summary by NAICS']], ignore_index=True)\n        key_demographic_indicators = pd.concat([key_demographic_indicators, tables['Key Demographic Indicators']], ignore_index=True)\n        journey_to_work = pd.concat([journey_to_work, tables['Journey to Work']], ignore_index=True)\n        vehicles_available = pd.concat([vehicles_available, tables['Vehicles Available']], ignore_index=True)\n        income_table = pd.concat([income_table, tables['Income Table']], ignore_index=True)\n        housing_and_households = pd.concat([housing_and_households, tables['Housing and Households']], ignore_index=True)\n        income_tier_per_household = pd.concat([income_tier_per_household, tables['Income Tier per Household']], ignore_index=True)\n        tapestry_segments = pd.concat([tapestry_segments, tables['Tapestry Segments']], ignore_index=True)\n        tapestry_lifemode = pd.concat([tapestry_lifemode, tables['Tapestry Lifemode']], ignore_index=True)\n        key_demographic_by_generation = pd.concat([key_demographic_by_generation, tables['Key Demographic by Generation']], ignore_index=True)\n    except Exception as e:\n        print(f\"Error processing file {test_path}: {str(e)}\")",
+        "output_types": []
+      },
+      {
+        "type": "markdown",
+        "source": "#### some cleaning",
+        "output_types": []
+      },
+      {
+        "type": "code",
+        "source": "tapestry_lifemode = tapestry_lifemode[tapestry_lifemode['Index'].notna()]\n",
+        "output_types": []
+      },
+      {
+        "type": "markdown",
+        "source": "### export each table as a tab into one excel file",
+        "output_types": []
+      },
+      {
+        "type": "code",
+        "source": "# Function to save all tables to a single Excel file with separate sheets\ndef save_to_excel(output_path):\n    with pd.ExcelWriter(output_path, engine='xlsxwriter') as writer:\n        for table_name, table_df in {\n            'Description Table': description_table,\n            'Retail Spending Summary': retail_spending_summary,\n            'Spending Summary by NAICS': spending_summary_by_naics,\n            'Key Demographic Indicators': key_demographic_indicators,\n            'Journey to Work': journey_to_work,\n            'Vehicles Available': vehicles_available,\n            'Income Table': income_table,\n            'Housing and Households': housing_and_households,\n            'Income Tier per Household': income_tier_per_household,\n            'Tapestry Segments': tapestry_segments,\n            'Tapestry Lifemode': tapestry_lifemode,\n            'Key Demographic by Generation': key_demographic_by_generation\n        }.items():\n            table_df.to_excel(writer, sheet_name=table_name, index=False, startrow=1, header=False)\n            workbook = writer.book\n            worksheet = writer.sheets[table_name]\n\n            # Get the column names and the number of rows and columns\n            columns = [{'header': col} for col in table_df.columns]\n            num_rows, num_cols = table_df.shape\n\n            # Add the table with formatting\n            worksheet.add_table(0, 0, num_rows, num_cols - 1, {\n                'columns': columns,\n                'name': table_name.replace(' ', '_'),\n                'autofilter': True,\n                'style': 'Table Style Medium 9'\n            })\n    print(f\"All tables have been saved to {output_path}\")",
+        "output_types": []
+      },
+      {
+        "type": "code",
+        "source": "# Call the function to save the data to an Excel file\noutput_path = './pnr_esrigc/community_analyst_export.xlsx'\nsave_to_excel(output_path)",
+        "output_types": [
+          "stream"
+        ]
+      }
+    ]
+  },
+  {
+    "path": "DB/.dbeaver/.data-sources.json.bak",
+    "bytes": 1054,
+    "text": "Connection configuration inspected; details omitted."
+  },
+  {
+    "path": "DB/.dbeaver/data-sources.json",
+    "bytes": 1108,
+    "text": "Connection configuration inspected; details omitted."
+  },
+  {
+    "path": "DB/.dbeaver/project-settings.json",
+    "bytes": 45,
+    "text": "Connection configuration inspected; details omitted."
+  },
+  {
+    "path": "DB/.project",
+    "bytes": 267,
+    "text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<projectDescription>\n\t<name>TAZEXPLORER</name>\n\t<comment></comment>\n\t<projects>\n\t</projects>\n\t<buildSpec>\n\t</buildSpec>\n\t<natures>\n\t\t<nature>org.jkiss.dbeaver.DBeaverNature</nature>\n\t</natures>\n</projectDescription>\n"
+  },
+  {
+    "path": "RAW/hgac_fc/Hh_table.csv",
+    "bytes": 3882,
+    "rows": 26,
+    "headers": [
+      "Sector 25",
+      "Hh 2020",
+      "Hh 2025",
+      "Hh 2030",
+      "Hh 2035",
+      "Hh 2040",
+      "Hh 2045",
+      "Hh 2050",
+      "Hh Growth (2020-2050)",
+      "Hh Growth % (2020-2050)"
+    ],
+    "preview": [
+      [
+        "Grand Total",
+        "2,498,327",
+        "2,780,996",
+        "3,054,127",
+        "3,331,745",
+        "3,607,558",
+        "3,881,514",
+        "4,162,570",
+        "1,664,243",
+        "66.6%"
+      ],
+      [
+        "1",
+        "72,996",
+        "82,456",
+        "88,839",
+        "97,561",
+        "99,908",
+        "106,841",
+        "119,912",
+        "46,916",
+        "64.3%"
+      ],
+      [
+        "2",
+        "37,924",
+        "46,840",
+        "63,426",
+        "74,540",
+        "87,238",
+        "103,942",
+        "132,906",
+        "94,982",
+        "250.5%"
+      ]
+    ]
+  },
+  {
+    "path": "RAW/hgac_fc/Hp_table.csv",
+    "bytes": 4034,
+    "rows": 26,
+    "headers": [
+      "Sector 25",
+      "Hp 2020",
+      "Hp 2025",
+      "Hp 2030",
+      "Hp 2035",
+      "Hp 2040",
+      "Hp 2045",
+      "Hp 2050",
+      "Hp Growth (2020-2050)",
+      "Hp Growth % (2020-2050)"
+    ],
+    "preview": [
+      [
+        "Grand Total",
+        "7,096,384",
+        "7,699,873",
+        "8,329,098",
+        "8,960,765",
+        "9,570,596",
+        "10,154,096",
+        "10,722,807",
+        "3,626,423",
+        "51.1%"
+      ],
+      [
+        "1",
+        "191,726",
+        "209,131",
+        "224,664",
+        "245,857",
+        "251,316",
+        "268,437",
+        "297,035",
+        "105,309",
+        "54.9%"
+      ],
+      [
+        "2",
+        "111,114",
+        "126,898",
+        "164,215",
+        "192,262",
+        "224,689",
+        "266,815",
+        "333,547",
+        "222,433",
+        "200.2%"
+      ]
+    ]
+  },
+  {
+    "path": "RAW/hgac_fc/J_table.csv",
+    "bytes": 3874,
+    "rows": 26,
+    "headers": [
+      "Sector 25",
+      "J 2020",
+      "J 2025",
+      "J 2030",
+      "J 2035",
+      "J 2040",
+      "J 2045",
+      "J 2050",
+      "Job Growth (2020-2050)",
+      "Job Growth % (2020-2050)"
+    ],
+    "preview": [
+      [
+        "Grand Total",
+        "3,320,666",
+        "3,666,804",
+        "3,918,356",
+        "4,152,709",
+        "4,379,707",
+        "4,652,851",
+        "4,932,211",
+        "1,611,545",
+        "48.5%"
+      ],
+      [
+        "1",
+        "69,635",
+        "74,181",
+        "75,644",
+        "76,889",
+        "77,048",
+        "77,306",
+        "79,957",
+        "10,322",
+        "14.8%"
+      ],
+      [
+        "2",
+        "27,590",
+        "29,712",
+        "34,359",
+        "36,395",
+        "37,167",
+        "43,204",
+        "57,415",
+        "29,825",
+        "108.1%"
+      ]
+    ]
+  },
+  {
+    "path": "RAW/ltsv_esrica/100.xlsx",
+    "bytes": 55353,
+    "sheets": [
+      {
+        "name": "TOWNE LAKE / CYPRESS SPRINGS",
+        "rows": 150,
+        "columns": 8,
+        "nonempty_rows": 136,
+        "preview": [
+          {
+            "row": 2,
+            "values": [
+              "Park and Ride Market DemData (Tabular)",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 3,
+            "values": [
+              "TOWNE LAKE / CYPRESS SPRINGS",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              "Area: 12.59 square miles",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              "NAICS Code",
+              "Industry Summary",
+              "Spending Potential Index",
+              "Average \nSpent",
+              "Total",
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 7,
+            "values": [
+              "44-45, 722",
+              "Retail Trade, Food Services & Drinking Places",
+              111,
+              33391.18,
+              676371841,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 8,
+            "values": [
+              "44-45",
+              "Retail Trade",
+              111,
+              28398.96,
+              575249363,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 9,
+            "values": [
+              "722",
+              "Food Services & Drinking Places",
+              114,
+              4992.22,
+              101122478,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 11,
+            "values": [
+              "NAICS Code",
+              "Industry Subsector & Group",
+              "Index",
+              "Average Spending",
+              "Total",
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 12,
+            "values": [
+              "441",
+              "Motor Vehicle & Parts Dealers",
+              111,
+              3431.06,
+              69499507,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 13,
+            "values": [
+              "4411",
+              "Automobile Dealers",
+              109,
+              2832.89,
+              57382995,
+              null,
+              null,
+              null
+            ]
+          }
+        ],
+        "formula_count": 0
+      }
+    ]
+  },
+  {
+    "path": "RAW/ltsv_esrica/105.xlsx",
+    "bytes": 56319,
+    "sheets": [
+      {
+        "name": "WALLER / HOCKLEY",
+        "rows": 150,
+        "columns": 10,
+        "nonempty_rows": 136,
+        "preview": [
+          {
+            "row": 2,
+            "values": [
+              "Park and Ride Market DemData (Tabular)",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 3,
+            "values": [
+              "WALLER / HOCKLEY",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              "Area: 51.61 square miles",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              "NAICS Code",
+              "Industry Summary",
+              "Spending Potential Index",
+              "Average \nSpent",
+              "Total",
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 7,
+            "values": [
+              "44-45, 722",
+              "Retail Trade, Food Services & Drinking Places",
+              99,
+              29640.41,
+              174848758,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 8,
+            "values": [
+              "44-45",
+              "Retail Trade",
+              98,
+              25227.38,
+              148816335,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 9,
+            "values": [
+              "722",
+              "Food Services & Drinking Places",
+              100,
+              4413.02,
+              26032423,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 11,
+            "values": [
+              "NAICS Code",
+              "Industry Subsector & Group",
+              "Index",
+              "Average Spending",
+              "Total",
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 12,
+            "values": [
+              "441",
+              "Motor Vehicle & Parts Dealers",
+              97,
+              3010.09,
+              17756536,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 13,
+            "values": [
+              "4411",
+              "Automobile Dealers",
+              96,
+              2488.12,
+              14677406,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          }
+        ],
+        "formula_count": 0
+      }
+    ]
+  },
+  {
+    "path": "RAW/ltsv_esrica/111.xlsx",
+    "bytes": 55021,
+    "sheets": [
+      {
+        "name": "WILLOWBRIDGE / NORTH HOUSTON GA",
+        "rows": 150,
+        "columns": 7,
+        "nonempty_rows": 136,
+        "preview": [
+          {
+            "row": 2,
+            "values": [
+              "Park and Ride Market DemData (Tabular)",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 3,
+            "values": [
+              "WILLOWBRIDGE / NORTH HOUSTON GARDENS / WOODWIND LAKES",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              "Area: 10.56 square miles",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              "NAICS Code",
+              "Industry Summary",
+              "Spending Potential Index",
+              "Average \nSpent",
+              "Total",
+              null,
+              null
+            ]
+          },
+          {
+            "row": 7,
+            "values": [
+              "44-45, 722",
+              "Retail Trade, Food Services & Drinking Places",
+              113,
+              33802.83,
+              458636774,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 8,
+            "values": [
+              "44-45",
+              "Retail Trade",
+              112,
+              28822.76,
+              391067163,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 9,
+            "values": [
+              "722",
+              "Food Services & Drinking Places",
+              113,
+              4980.07,
+              67569612,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 11,
+            "values": [
+              "NAICS Code",
+              "Industry Subsector & Group",
+              "Index",
+              "Average Spending",
+              "Total",
+              null,
+              null
+            ]
+          },
+          {
+            "row": 12,
+            "values": [
+              "441",
+              "Motor Vehicle & Parts Dealers",
+              112,
+              3478.37,
+              47194590,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 13,
+            "values": [
+              "4411",
+              "Automobile Dealers",
+              112,
+              2890.56,
+              39219141,
+              null,
+              null
+            ]
+          }
+        ],
+        "formula_count": 0
+      }
+    ]
+  },
+  {
+    "path": "RAW/ltsv_esrica/15.xlsx",
+    "bytes": 63996,
+    "sheets": [
+      {
+        "name": "Recovered_Sheet1",
+        "rows": 150,
+        "columns": 5,
+        "nonempty_rows": 136,
+        "preview": [
+          {
+            "row": 2,
+            "values": [
+              "Park and Ride Market DemData (Tabular)",
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 3,
+            "values": [
+              "BRIDGELAND / ELYSON",
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              "Area: 58.43 square miles",
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              "NAICS Code",
+              "Industry Summary",
+              "Spending Potential Index",
+              "Average \nSpent",
+              "Total"
+            ]
+          },
+          {
+            "row": 7,
+            "values": [
+              "44-45, 722",
+              "Retail Trade, Food Services & Drinking Places",
+              149,
+              44639.8,
+              1493424461
+            ]
+          },
+          {
+            "row": 8,
+            "values": [
+              "44-45",
+              "Retail Trade",
+              148,
+              37876.25,
+              1267149826
+            ]
+          },
+          {
+            "row": 9,
+            "values": [
+              "722",
+              "Food Services & Drinking Places",
+              154,
+              6763.55,
+              226274635
+            ]
+          },
+          {
+            "row": 11,
+            "values": [
+              "NAICS Code",
+              "Industry Subsector & Group",
+              "Index",
+              "Average Spending",
+              "Total"
+            ]
+          },
+          {
+            "row": 12,
+            "values": [
+              "441",
+              "Motor Vehicle & Parts Dealers",
+              147,
+              4555.84,
+              152415477
+            ]
+          },
+          {
+            "row": 13,
+            "values": [
+              "4411",
+              "Automobile Dealers",
+              143,
+              3713.6,
+              124238498
+            ]
+          }
+        ],
+        "formula_count": 0
+      }
+    ]
+  },
+  {
+    "path": "RAW/ltsv_esrica/16.xlsx",
+    "bytes": 53826,
+    "sheets": [
+      {
+        "name": "CARVERDALE",
+        "rows": 150,
+        "columns": 5,
+        "nonempty_rows": 136,
+        "preview": [
+          {
+            "row": 2,
+            "values": [
+              "Park and Ride Market DemData (Tabular)",
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 3,
+            "values": [
+              "CARVERDALE",
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              "Area: 2.1 square miles",
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              "NAICS Code",
+              "Industry Summary",
+              "Spending Potential Index",
+              "Average \nSpent",
+              "Total"
+            ]
+          },
+          {
+            "row": 7,
+            "values": [
+              "44-45, 722",
+              "Retail Trade, Food Services & Drinking Places",
+              115,
+              34532.9,
+              5421665
+            ]
+          },
+          {
+            "row": 8,
+            "values": [
+              "44-45",
+              "Retail Trade",
+              114,
+              29288.68,
+              4598322
+            ]
+          },
+          {
+            "row": 9,
+            "values": [
+              "722",
+              "Food Services & Drinking Places",
+              119,
+              5244.22,
+              823343
+            ]
+          },
+          {
+            "row": 11,
+            "values": [
+              "NAICS Code",
+              "Industry Subsector & Group",
+              "Index",
+              "Average Spending",
+              "Total"
+            ]
+          },
+          {
+            "row": 12,
+            "values": [
+              "441",
+              "Motor Vehicle & Parts Dealers",
+              105,
+              3264.86,
+              512583
+            ]
+          },
+          {
+            "row": 13,
+            "values": [
+              "4411",
+              "Automobile Dealers",
+              105,
+              2707.29,
+              425045
+            ]
+          }
+        ],
+        "formula_count": 0
+      }
+    ]
+  },
+  {
+    "path": "RAW/ltsv_esrica/21.xlsx",
+    "bytes": 55390,
+    "sheets": [
+      {
+        "name": "COPPERFIELD / NORTHMEAD VILLAGE",
+        "rows": 150,
+        "columns": 8,
+        "nonempty_rows": 136,
+        "preview": [
+          {
+            "row": 2,
+            "values": [
+              "Park and Ride Market DemData (Tabular)",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 3,
+            "values": [
+              "COPPERFIELD / NORTHMEAD VILLAGE",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              "Area: 12.29 square miles",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              "NAICS Code",
+              "Industry Summary",
+              "Spending Potential Index",
+              "Average \nSpent",
+              "Total",
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 7,
+            "values": [
+              "44-45, 722",
+              "Retail Trade, Food Services & Drinking Places",
+              120,
+              35987.31,
+              387547361,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 8,
+            "values": [
+              "44-45",
+              "Retail Trade",
+              119,
+              30622.42,
+              329772833,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 9,
+            "values": [
+              "722",
+              "Food Services & Drinking Places",
+              122,
+              5364.89,
+              57774528,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 11,
+            "values": [
+              "NAICS Code",
+              "Industry Subsector & Group",
+              "Index",
+              "Average Spending",
+              "Total",
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 12,
+            "values": [
+              "441",
+              "Motor Vehicle & Parts Dealers",
+              118,
+              3658.85,
+              39402186,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 13,
+            "values": [
+              "4411",
+              "Automobile Dealers",
+              118,
+              3043.24,
+              32772598,
+              null,
+              null,
+              null
+            ]
+          }
+        ],
+        "formula_count": 0
+      }
+    ]
+  },
+  {
+    "path": "RAW/ltsv_esrica/23.xlsx",
+    "bytes": 54002,
+    "sheets": [
+      {
+        "name": "CYPRESS",
+        "rows": 150,
+        "columns": 5,
+        "nonempty_rows": 136,
+        "preview": [
+          {
+            "row": 2,
+            "values": [
+              "Park and Ride Market DemData (Tabular)",
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 3,
+            "values": [
+              "CYPRESS",
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              "Area: 84.74 square miles",
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              "NAICS Code",
+              "Industry Summary",
+              "Spending Potential Index",
+              "Average \nSpent",
+              "Total"
+            ]
+          },
+          {
+            "row": 7,
+            "values": [
+              "44-45, 722",
+              "Retail Trade, Food Services & Drinking Places",
+              120,
+              36183.72,
+              2758755060
+            ]
+          },
+          {
+            "row": 8,
+            "values": [
+              "44-45",
+              "Retail Trade",
+              120,
+              30765.28,
+              2345636997
+            ]
+          },
+          {
+            "row": 9,
+            "values": [
+              "722",
+              "Food Services & Drinking Places",
+              123,
+              5418.44,
+              413118063
+            ]
+          },
+          {
+            "row": 11,
+            "values": [
+              "NAICS Code",
+              "Industry Subsector & Group",
+              "Index",
+              "Average Spending",
+              "Total"
+            ]
+          },
+          {
+            "row": 12,
+            "values": [
+              "441",
+              "Motor Vehicle & Parts Dealers",
+              120,
+              3710.6,
+              282906948
+            ]
+          },
+          {
+            "row": 13,
+            "values": [
+              "4411",
+              "Automobile Dealers",
+              118,
+              3053.46,
+              232805226
+            ]
+          }
+        ],
+        "formula_count": 0
+      }
+    ]
+  },
+  {
+    "path": "RAW/ltsv_esrica/3.xlsx",
+    "bytes": 53969,
+    "sheets": [
+      {
+        "name": "ADDICKS PARK TEN",
+        "rows": 150,
+        "columns": 5,
+        "nonempty_rows": 136,
+        "preview": [
+          {
+            "row": 2,
+            "values": [
+              "Park and Ride Market DemData (Tabular)",
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 3,
+            "values": [
+              "ADDICKS PARK TEN",
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              "Area: 21.81 square miles",
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              "NAICS Code",
+              "Industry Summary",
+              "Spending Potential Index",
+              "Average \nSpent",
+              "Total"
+            ]
+          },
+          {
+            "row": 7,
+            "values": [
+              "44-45, 722",
+              "Retail Trade, Food Services & Drinking Places",
+              102,
+              30674.23,
+              347692370
+            ]
+          },
+          {
+            "row": 8,
+            "values": [
+              "44-45",
+              "Retail Trade",
+              102,
+              26093.73,
+              295772438
+            ]
+          },
+          {
+            "row": 9,
+            "values": [
+              "722",
+              "Food Services & Drinking Places",
+              104,
+              4580.5,
+              51919932
+            ]
+          },
+          {
+            "row": 11,
+            "values": [
+              "NAICS Code",
+              "Industry Subsector & Group",
+              "Index",
+              "Average Spending",
+              "Total"
+            ]
+          },
+          {
+            "row": 12,
+            "values": [
+              "441",
+              "Motor Vehicle & Parts Dealers",
+              100,
+              3093.06,
+              35059788
+            ]
+          },
+          {
+            "row": 13,
+            "values": [
+              "4411",
+              "Automobile Dealers",
+              100,
+              2589.99,
+              29357510
+            ]
+          }
+        ],
+        "formula_count": 0
+      }
+    ]
+  },
+  {
+    "path": "RAW/ltsv_esrica/32.xlsx",
+    "bytes": 54628,
+    "sheets": [
+      {
+        "name": "ELDRIDGE / WEST OAKS",
+        "rows": 150,
+        "columns": 6,
+        "nonempty_rows": 136,
+        "preview": [
+          {
+            "row": 2,
+            "values": [
+              "Park and Ride Market DemData (Tabular)",
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 3,
+            "values": [
+              "ELDRIDGE / WEST OAKS",
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              "Area: 28.93 square miles",
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              "NAICS Code",
+              "Industry Summary",
+              "Spending Potential Index",
+              "Average \nSpent",
+              "Total",
+              null
+            ]
+          },
+          {
+            "row": 7,
+            "values": [
+              "44-45, 722",
+              "Retail Trade, Food Services & Drinking Places",
+              88,
+              26436.69,
+              972870283,
+              null
+            ]
+          },
+          {
+            "row": 8,
+            "values": [
+              "44-45",
+              "Retail Trade",
+              88,
+              22442.36,
+              825879017,
+              null
+            ]
+          },
+          {
+            "row": 9,
+            "values": [
+              "722",
+              "Food Services & Drinking Places",
+              91,
+              3994.33,
+              146991266,
+              null
+            ]
+          },
+          {
+            "row": 11,
+            "values": [
+              "NAICS Code",
+              "Industry Subsector & Group",
+              "Index",
+              "Average Spending",
+              "Total",
+              null
+            ]
+          },
+          {
+            "row": 12,
+            "values": [
+              "441",
+              "Motor Vehicle & Parts Dealers",
+              84,
+              2616.17,
+              96275087,
+              null
+            ]
+          },
+          {
+            "row": 13,
+            "values": [
+              "4411",
+              "Automobile Dealers",
+              85,
+              2202.46,
+              81050388,
+              null
+            ]
+          }
+        ],
+        "formula_count": 0
+      }
+    ]
+  },
+  {
+    "path": "RAW/ltsv_esrica/56.xlsx",
+    "bytes": 56351,
+    "sheets": [
+      {
+        "name": "KATY",
+        "rows": 150,
+        "columns": 10,
+        "nonempty_rows": 136,
+        "preview": [
+          {
+            "row": 2,
+            "values": [
+              "Park and Ride Market DemData (Tabular)",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 3,
+            "values": [
+              "KATY",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              "Area: 18.25 square miles",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              "NAICS Code",
+              "Industry Summary",
+              "Spending Potential Index",
+              "Average \nSpent",
+              "Total",
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 7,
+            "values": [
+              "44-45, 722",
+              "Retail Trade, Food Services & Drinking Places",
+              120,
+              35970.93,
+              650714086,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 8,
+            "values": [
+              "44-45",
+              "Retail Trade",
+              119,
+              30558.15,
+              552796873,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 9,
+            "values": [
+              "722",
+              "Food Services & Drinking Places",
+              123,
+              5412.78,
+              97917213,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 11,
+            "values": [
+              "NAICS Code",
+              "Industry Subsector & Group",
+              "Index",
+              "Average Spending",
+              "Total",
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 12,
+            "values": [
+              "441",
+              "Motor Vehicle & Parts Dealers",
+              118,
+              3667.59,
+              66346683,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 13,
+            "values": [
+              "4411",
+              "Automobile Dealers",
+              117,
+              3032.85,
+              54864298,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          }
+        ],
+        "formula_count": 0
+      }
+    ]
+  },
+  {
+    "path": "RAW/ltsv_esrica/57.xlsx",
+    "bytes": 54530,
+    "sheets": [
+      {
+        "name": "KATY EAST",
+        "rows": 150,
+        "columns": 6,
+        "nonempty_rows": 136,
+        "preview": [
+          {
+            "row": 2,
+            "values": [
+              "Park and Ride Market DemData (Tabular)",
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 3,
+            "values": [
+              "KATY EAST",
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              "Area: 43.65 square miles",
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              "NAICS Code",
+              "Industry Summary",
+              "Spending Potential Index",
+              "Average \nSpent",
+              "Total",
+              null
+            ]
+          },
+          {
+            "row": 7,
+            "values": [
+              "44-45, 722",
+              "Retail Trade, Food Services & Drinking Places",
+              105,
+              31411.07,
+              1803309737,
+              null
+            ]
+          },
+          {
+            "row": 8,
+            "values": [
+              "44-45",
+              "Retail Trade",
+              104,
+              26716.51,
+              1533794624,
+              null
+            ]
+          },
+          {
+            "row": 9,
+            "values": [
+              "722",
+              "Food Services & Drinking Places",
+              107,
+              4694.57,
+              269515113,
+              null
+            ]
+          },
+          {
+            "row": 11,
+            "values": [
+              "NAICS Code",
+              "Industry Subsector & Group",
+              "Index",
+              "Average Spending",
+              "Total",
+              null
+            ]
+          },
+          {
+            "row": 12,
+            "values": [
+              "441",
+              "Motor Vehicle & Parts Dealers",
+              103,
+              3193.13,
+              183317532,
+              null
+            ]
+          },
+          {
+            "row": 13,
+            "values": [
+              "4411",
+              "Automobile Dealers",
+              102,
+              2649.01,
+              152079915,
+              null
+            ]
+          }
+        ],
+        "formula_count": 0
+      }
+    ]
+  },
+  {
+    "path": "RAW/ltsv_esrica/58.xlsx",
+    "bytes": 55365,
+    "sheets": [
+      {
+        "name": "KATY HOCKLEY",
+        "rows": 150,
+        "columns": 8,
+        "nonempty_rows": 136,
+        "preview": [
+          {
+            "row": 2,
+            "values": [
+              "Park and Ride Market DemData (Tabular)",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 3,
+            "values": [
+              "KATY HOCKLEY",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              "Area: 50.09 square miles",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              "NAICS Code",
+              "Industry Summary",
+              "Spending Potential Index",
+              "Average \nSpent",
+              "Total",
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 7,
+            "values": [
+              "44-45, 722",
+              "Retail Trade, Food Services & Drinking Places",
+              119,
+              35702.85,
+              54732471,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 8,
+            "values": [
+              "44-45",
+              "Retail Trade",
+              119,
+              30384.97,
+              46580154,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 9,
+            "values": [
+              "722",
+              "Food Services & Drinking Places",
+              121,
+              5317.88,
+              8152317,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 11,
+            "values": [
+              "NAICS Code",
+              "Industry Subsector & Group",
+              "Index",
+              "Average Spending",
+              "Total",
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 12,
+            "values": [
+              "441",
+              "Motor Vehicle & Parts Dealers",
+              117,
+              3634.73,
+              5572034,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 13,
+            "values": [
+              "4411",
+              "Automobile Dealers",
+              116,
+              2998.88,
+              4597282,
+              null,
+              null,
+              null
+            ]
+          }
+        ],
+        "formula_count": 0
+      }
+    ]
+  },
+  {
+    "path": "RAW/ltsv_esrica/59.xlsx",
+    "bytes": 56612,
+    "sheets": [
+      {
+        "name": "KATY NORTH",
+        "rows": 150,
+        "columns": 11,
+        "nonempty_rows": 136,
+        "preview": [
+          {
+            "row": 2,
+            "values": [
+              "Park and Ride Market DemData (Tabular)",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 3,
+            "values": [
+              "KATY NORTH",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              "Area: 18.25 square miles",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              "NAICS Code",
+              "Industry Summary",
+              "Spending Potential Index",
+              "Average \nSpent",
+              "Total",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 7,
+            "values": [
+              "44-45, 722",
+              "Retail Trade, Food Services & Drinking Places",
+              121,
+              36186.69,
+              398632585,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 8,
+            "values": [
+              "44-45",
+              "Retail Trade",
+              120,
+              30727.67,
+              338496000,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 9,
+            "values": [
+              "722",
+              "Food Services & Drinking Places",
+              124,
+              5459.02,
+              60136586,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 11,
+            "values": [
+              "NAICS Code",
+              "Industry Subsector & Group",
+              "Index",
+              "Average Spending",
+              "Total",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 12,
+            "values": [
+              "441",
+              "Motor Vehicle & Parts Dealers",
+              119,
+              3693.78,
+              40690643,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 13,
+            "values": [
+              "4411",
+              "Automobile Dealers",
+              115,
+              2990.46,
+              32942855,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          }
+        ],
+        "formula_count": 0
+      }
+    ]
+  },
+  {
+    "path": "RAW/ltsv_esrica/67.xlsx",
+    "bytes": 53968,
+    "sheets": [
+      {
+        "name": "MEMORIAL",
+        "rows": 150,
+        "columns": 5,
+        "nonempty_rows": 136,
+        "preview": [
+          {
+            "row": 2,
+            "values": [
+              "Park and Ride Market DemData (Tabular)",
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 3,
+            "values": [
+              "MEMORIAL",
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              "Area: 9.61 square miles",
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              "NAICS Code",
+              "Industry Summary",
+              "Spending Potential Index",
+              "Average \nSpent",
+              "Total"
+            ]
+          },
+          {
+            "row": 7,
+            "values": [
+              "44-45, 722",
+              "Retail Trade, Food Services & Drinking Places",
+              139,
+              41802.54,
+              893654786
+            ]
+          },
+          {
+            "row": 8,
+            "values": [
+              "44-45",
+              "Retail Trade",
+              138,
+              35419.33,
+              757194413
+            ]
+          },
+          {
+            "row": 9,
+            "values": [
+              "722",
+              "Food Services & Drinking Places",
+              145,
+              6383.22,
+              136460374
+            ]
+          },
+          {
+            "row": 11,
+            "values": [
+              "NAICS Code",
+              "Industry Subsector & Group",
+              "Index",
+              "Average Spending",
+              "Total"
+            ]
+          },
+          {
+            "row": 12,
+            "values": [
+              "441",
+              "Motor Vehicle & Parts Dealers",
+              135,
+              4204.17,
+              89876714
+            ]
+          },
+          {
+            "row": 13,
+            "values": [
+              "4411",
+              "Automobile Dealers",
+              137,
+              3545.83,
+              75802819
+            ]
+          }
+        ],
+        "formula_count": 0
+      }
+    ]
+  },
+  {
+    "path": "RAW/ltsv_esrica/9.xlsx",
+    "bytes": 55345,
+    "sheets": [
+      {
+        "name": "BEAR CREEK",
+        "rows": 150,
+        "columns": 8,
+        "nonempty_rows": 136,
+        "preview": [
+          {
+            "row": 2,
+            "values": [
+              "Park and Ride Market DemData (Tabular)",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 3,
+            "values": [
+              "BEAR CREEK",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              "Area: 23.95 square miles",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              "NAICS Code",
+              "Industry Summary",
+              "Spending Potential Index",
+              "Average \nSpent",
+              "Total",
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 7,
+            "values": [
+              "44-45, 722",
+              "Retail Trade, Food Services & Drinking Places",
+              87,
+              26188.09,
+              1048964042,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 8,
+            "values": [
+              "44-45",
+              "Retail Trade",
+              87,
+              22295.01,
+              893026429,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 9,
+            "values": [
+              "722",
+              "Food Services & Drinking Places",
+              89,
+              3893.09,
+              155937613,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 11,
+            "values": [
+              "NAICS Code",
+              "Industry Subsector & Group",
+              "Index",
+              "Average Spending",
+              "Total",
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 12,
+            "values": [
+              "441",
+              "Motor Vehicle & Parts Dealers",
+              86,
+              2660.43,
+              106563567,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 13,
+            "values": [
+              "4411",
+              "Automobile Dealers",
+              85,
+              2198.23,
+              88050038,
+              null,
+              null,
+              null
+            ]
+          }
+        ],
+        "formula_count": 0
+      }
+    ]
+  },
+  {
+    "path": "RAW/pnr_esrigc/community_analyst_export.xlsx",
+    "bytes": 107091,
+    "sheets": [
+      {
+        "name": "Description Table",
+        "rows": 61,
+        "columns": 3,
+        "nonempty_rows": 61,
+        "preview": [
+          {
+            "row": 1,
+            "values": [
+              "Description",
+              "Value",
+              "OD_ID"
+            ]
+          },
+          {
+            "row": 2,
+            "values": [
+              "Title",
+              "Park and Ride Market DemData (Tabular)",
+              100
+            ]
+          },
+          {
+            "row": 3,
+            "values": [
+              "OD Area",
+              "TOWNE LAKE / CYPRESS SPRINGS",
+              100
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              "OD_ID",
+              "100",
+              100
+            ]
+          },
+          {
+            "row": 5,
+            "values": [
+              "Area (square miles)",
+              "12.59",
+              100
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              "Title",
+              "Park and Ride Market DemData (Tabular)",
+              105
+            ]
+          },
+          {
+            "row": 7,
+            "values": [
+              "OD Area",
+              "WALLER / HOCKLEY",
+              105
+            ]
+          },
+          {
+            "row": 8,
+            "values": [
+              "OD_ID",
+              "105",
+              105
+            ]
+          },
+          {
+            "row": 9,
+            "values": [
+              "Area (square miles)",
+              "51.61",
+              105
+            ]
+          },
+          {
+            "row": 10,
+            "values": [
+              "Title",
+              "Park and Ride Market DemData (Tabular)",
+              111
+            ]
+          }
+        ],
+        "formula_count": 0
+      },
+      {
+        "name": "Retail Spending Summary",
+        "rows": 46,
+        "columns": 6,
+        "nonempty_rows": 46,
+        "preview": [
+          {
+            "row": 1,
+            "values": [
+              "NAICS Code",
+              "Industry Summary",
+              "Spending Potential Index",
+              "Average Spent",
+              "Total",
+              "OD_ID"
+            ]
+          },
+          {
+            "row": 2,
+            "values": [
+              "44-45, 722",
+              "Retail Trade, Food Services & Drinking Places",
+              111,
+              33391.18,
+              676371841,
+              100
+            ]
+          },
+          {
+            "row": 3,
+            "values": [
+              "44-45",
+              "Retail Trade",
+              111,
+              28398.96,
+              575249363,
+              100
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              "722",
+              "Food Services & Drinking Places",
+              114,
+              4992.22,
+              101122478,
+              100
+            ]
+          },
+          {
+            "row": 5,
+            "values": [
+              "44-45, 722",
+              "Retail Trade, Food Services & Drinking Places",
+              99,
+              29640.41,
+              174848758,
+              105
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              "44-45",
+              "Retail Trade",
+              98,
+              25227.38,
+              148816335,
+              105
+            ]
+          },
+          {
+            "row": 7,
+            "values": [
+              "722",
+              "Food Services & Drinking Places",
+              100,
+              4413.02,
+              26032423,
+              105
+            ]
+          },
+          {
+            "row": 8,
+            "values": [
+              "44-45, 722",
+              "Retail Trade, Food Services & Drinking Places",
+              113,
+              33802.83,
+              458636774,
+              111
+            ]
+          },
+          {
+            "row": 9,
+            "values": [
+              "44-45",
+              "Retail Trade",
+              112,
+              28822.76,
+              391067163,
+              111
+            ]
+          },
+          {
+            "row": 10,
+            "values": [
+              "722",
+              "Food Services & Drinking Places",
+              113,
+              4980.07,
+              67569612,
+              111
+            ]
+          }
+        ],
+        "formula_count": 0
+      },
+      {
+        "name": "Spending Summary by NAICS",
+        "rows": 406,
+        "columns": 6,
+        "nonempty_rows": 406,
+        "preview": [
+          {
+            "row": 1,
+            "values": [
+              "NAICS Code",
+              "Industry Subsector & Group",
+              "Index",
+              "Average Spending",
+              "Total",
+              "OD_ID"
+            ]
+          },
+          {
+            "row": 2,
+            "values": [
+              "441",
+              "Motor Vehicle & Parts Dealers",
+              111,
+              3431.06,
+              69499507,
+              100
+            ]
+          },
+          {
+            "row": 3,
+            "values": [
+              "4411",
+              "Automobile Dealers",
+              109,
+              2832.89,
+              57382995,
+              100
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              "4412",
+              "Other Motor Vehicle Dealers",
+              119,
+              294.28,
+              5961002,
+              100
+            ]
+          },
+          {
+            "row": 5,
+            "values": [
+              "4413",
+              "Auto Parts, Accessories & Tire Stores",
+              114,
+              303.89,
+              6155510,
+              100
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              "442",
+              "Furniture and Home Furnishings Stores",
+              116,
+              1275.58,
+              25838100,
+              100
+            ]
+          },
+          {
+            "row": 7,
+            "values": [
+              "4421",
+              "Furniture Stores",
+              116,
+              828.75,
+              16787224,
+              100
+            ]
+          },
+          {
+            "row": 8,
+            "values": [
+              "4422",
+              "Home Furnishings Stores",
+              117,
+              446.82,
+              9050876,
+              100
+            ]
+          },
+          {
+            "row": 9,
+            "values": [
+              "443, 4431",
+              "Electronics and Appliance Stores",
+              113,
+              364.48,
+              7382972,
+              100
+            ]
+          },
+          {
+            "row": 10,
+            "values": [
+              "444",
+              "Bldg Material & Garden Equipment & Supplies Dealers",
+              119,
+              1816.37,
+              36792352,
+              100
+            ]
+          }
+        ],
+        "formula_count": 0
+      },
+      {
+        "name": "Key Demographic Indicators",
+        "rows": 106,
+        "columns": 3,
+        "nonempty_rows": 106,
+        "preview": [
+          {
+            "row": 1,
+            "values": [
+              "Indicator",
+              "Value",
+              "OD_ID"
+            ]
+          },
+          {
+            "row": 2,
+            "values": [
+              "2024 Total Population",
+              59841,
+              100
+            ]
+          },
+          {
+            "row": 3,
+            "values": [
+              "2020 Total Population",
+              61133,
+              100
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              "2024 Population Density",
+              4751.8,
+              100
+            ]
+          },
+          {
+            "row": 5,
+            "values": [
+              "2024 Population by 5-Yr Age Base",
+              59841,
+              100
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              "2010 Population Age 18+",
+              40365,
+              100
+            ]
+          },
+          {
+            "row": 7,
+            "values": [
+              "2024 Population Age 18+",
+              46104,
+              100
+            ]
+          },
+          {
+            "row": 8,
+            "values": [
+              "2029 Population Age 18+",
+              46361,
+              100
+            ]
+          },
+          {
+            "row": 9,
+            "values": [
+              "2024 Total Population",
+              18405,
+              105
+            ]
+          },
+          {
+            "row": 10,
+            "values": [
+              "2020 Total Population",
+              11635,
+              105
+            ]
+          }
+        ],
+        "formula_count": 0
+      },
+      {
+        "name": "Journey to Work",
+        "rows": 61,
+        "columns": 3,
+        "nonempty_rows": 61,
+        "preview": [
+          {
+            "row": 1,
+            "values": [
+              "Journey Type",
+              "Value",
+              "OD_ID"
+            ]
+          },
+          {
+            "row": 2,
+            "values": [
+              "2022 Workers Age 16+ (ACS 5-Yr)",
+              30390,
+              100
+            ]
+          },
+          {
+            "row": 3,
+            "values": [
+              "2022 Workers 16+: Drove Alone (ACS 5-Yr)",
+              22990,
+              100
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              "2022 Workers 16+: Carpooled (ACS 5-Yr)",
+              2504,
+              100
+            ]
+          },
+          {
+            "row": 5,
+            "values": [
+              "2022 Workers 16+: Public Transportation (ACS 5-Yr)",
+              341,
+              100
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              "2022 Workers Age 16+ (ACS 5-Yr)",
+              4942,
+              105
+            ]
+          },
+          {
+            "row": 7,
+            "values": [
+              "2022 Workers 16+: Drove Alone (ACS 5-Yr)",
+              4013,
+              105
+            ]
+          },
+          {
+            "row": 8,
+            "values": [
+              "2022 Workers 16+: Carpooled (ACS 5-Yr)",
+              442,
+              105
+            ]
+          },
+          {
+            "row": 9,
+            "values": [
+              "2022 Workers 16+: Public Transportation (ACS 5-Yr)",
+              17,
+              105
+            ]
+          },
+          {
+            "row": 10,
+            "values": [
+              "2022 Workers Age 16+ (ACS 5-Yr)",
+              20952,
+              111
+            ]
+          }
+        ],
+        "formula_count": 0
+      },
+      {
+        "name": "Vehicles Available",
+        "rows": 91,
+        "columns": 3,
+        "nonempty_rows": 91,
+        "preview": [
+          {
+            "row": 1,
+            "values": [
+              "Vehicle Availability",
+              "Value",
+              "OD_ID"
+            ]
+          },
+          {
+            "row": 2,
+            "values": [
+              "2022 Owner HHs with 0 Vehicles (ACS 5-Yr)",
+              37,
+              100
+            ]
+          },
+          {
+            "row": 3,
+            "values": [
+              "2022 Renter HHs with 0 Vehicles (ACS 5-Yr)",
+              170,
+              100
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              "2024 HH Owns or Leases 1 Vehicle",
+              5528,
+              100
+            ]
+          },
+          {
+            "row": 5,
+            "values": [
+              "2024 HH Owns or Leases 1+ Vehicles",
+              19177,
+              100
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              "2024 HH Owns or Leases 2 Vehicles",
+              8564,
+              100
+            ]
+          },
+          {
+            "row": 7,
+            "values": [
+              "2024 HH Owns or Leases 3+ Vehicles",
+              5084,
+              100
+            ]
+          },
+          {
+            "row": 8,
+            "values": [
+              "2022 Owner HHs with 0 Vehicles (ACS 5-Yr)",
+              37,
+              105
+            ]
+          },
+          {
+            "row": 9,
+            "values": [
+              "2022 Renter HHs with 0 Vehicles (ACS 5-Yr)",
+              135,
+              105
+            ]
+          },
+          {
+            "row": 10,
+            "values": [
+              "2024 HH Owns or Leases 1 Vehicle",
+              1833,
+              105
+            ]
+          }
+        ],
+        "formula_count": 0
+      },
+      {
+        "name": "Income Table",
+        "rows": 46,
+        "columns": 3,
+        "nonempty_rows": 46,
+        "preview": [
+          {
+            "row": 1,
+            "values": [
+              "Income Range",
+              "Number of Households",
+              "OD_ID"
+            ]
+          },
+          {
+            "row": 2,
+            "values": [
+              "2024 Median Household Income",
+              99323,
+              100
+            ]
+          },
+          {
+            "row": 3,
+            "values": [
+              "2024 Median Disposable Income",
+              81786,
+              100
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              "2024 Median Net Worth",
+              398390,
+              100
+            ]
+          },
+          {
+            "row": 5,
+            "values": [
+              "2024 Median Household Income",
+              79881,
+              105
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              "2024 Median Disposable Income",
+              65852,
+              105
+            ]
+          },
+          {
+            "row": 7,
+            "values": [
+              "2024 Median Net Worth",
+              254351,
+              105
+            ]
+          },
+          {
+            "row": 8,
+            "values": [
+              "2024 Median Household Income",
+              93061,
+              111
+            ]
+          },
+          {
+            "row": 9,
+            "values": [
+              "2024 Median Disposable Income",
+              77628,
+              111
+            ]
+          },
+          {
+            "row": 10,
+            "values": [
+              "2024 Median Net Worth",
+              325044,
+              111
+            ]
+          }
+        ],
+        "formula_count": 0
+      },
+      {
+        "name": "Housing and Households",
+        "rows": 76,
+        "columns": 3,
+        "nonempty_rows": 76,
+        "preview": [
+          {
+            "row": 1,
+            "values": [
+              "Housing Category",
+              "Value",
+              "OD_ID"
+            ]
+          },
+          {
+            "row": 2,
+            "values": [
+              "2010 Housing Units (Esri 2024)",
+              20174,
+              100
+            ]
+          },
+          {
+            "row": 3,
+            "values": [
+              "2020 Housing Units (Esri 2024)",
+              21561,
+              100
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              "2023 Housing Units (Esri 2024)",
+              21382,
+              100
+            ]
+          },
+          {
+            "row": 5,
+            "values": [
+              "2010 Total Households",
+              19380,
+              100
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              "2020 Total Households",
+              20525,
+              100
+            ]
+          },
+          {
+            "row": 7,
+            "values": [
+              "2010 Housing Units (Esri 2024)",
+              2066,
+              105
+            ]
+          },
+          {
+            "row": 8,
+            "values": [
+              "2020 Housing Units (Esri 2024)",
+              3941,
+              105
+            ]
+          },
+          {
+            "row": 9,
+            "values": [
+              "2023 Housing Units (Esri 2024)",
+              5666,
+              105
+            ]
+          },
+          {
+            "row": 10,
+            "values": [
+              "2010 Total Households",
+              1818,
+              105
+            ]
+          }
+        ],
+        "formula_count": 0
+      },
+      {
+        "name": "Income Tier per Household",
+        "rows": 46,
+        "columns": 3,
+        "nonempty_rows": 46,
+        "preview": [
+          {
+            "row": 1,
+            "values": [
+              "Income Tier",
+              "Number of Households",
+              "OD_ID"
+            ]
+          },
+          {
+            "row": 2,
+            "values": [
+              "2024 HH in Low Income Tier",
+              1777,
+              100
+            ]
+          },
+          {
+            "row": 3,
+            "values": [
+              "2024 HH in Middle Income Tier",
+              12380,
+              100
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              "2024 HH in Upper Income Tier",
+              6099,
+              100
+            ]
+          },
+          {
+            "row": 5,
+            "values": [
+              "2024 HH in Low Income Tier",
+              1138,
+              105
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              "2024 HH in Middle Income Tier",
+              3530,
+              105
+            ]
+          },
+          {
+            "row": 7,
+            "values": [
+              "2024 HH in Upper Income Tier",
+              1231,
+              105
+            ]
+          },
+          {
+            "row": 8,
+            "values": [
+              "2024 HH in Low Income Tier",
+              1268,
+              111
+            ]
+          },
+          {
+            "row": 9,
+            "values": [
+              "2024 HH in Middle Income Tier",
+              8433,
+              111
+            ]
+          },
+          {
+            "row": 10,
+            "values": [
+              "2024 HH in Upper Income Tier",
+              3867,
+              111
+            ]
+          }
+        ],
+        "formula_count": 0
+      },
+      {
+        "name": "Tapestry Segments",
+        "rows": 511,
+        "columns": 6,
+        "nonempty_rows": 511,
+        "preview": [
+          {
+            "row": 1,
+            "values": [
+              "Segment Code",
+              "Area Value",
+              "Harris County",
+              "Texas",
+              "United States",
+              "OD_ID"
+            ]
+          },
+          {
+            "row": 2,
+            "values": [
+              "Top 1 Segment Name",
+              "Boomburbs",
+              "Up and Coming Families",
+              "Up and Coming Families",
+              "Green Acres",
+              100
+            ]
+          },
+          {
+            "row": 3,
+            "values": [
+              "Top 1 Value",
+              7054,
+              189450,
+              1006841,
+              4314563,
+              100
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              "Top 1 Percentage",
+              0.348,
+              0.106,
+              0.09,
+              0.033,
+              100
+            ]
+          },
+          {
+            "row": 5,
+            "values": [
+              "Top 1 Type",
+              "Married Couples",
+              "Married Couples",
+              "Married Couples",
+              "Married Couples",
+              100
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              "Top 1 Median Age",
+              34.3,
+              32,
+              32,
+              44.7,
+              100
+            ]
+          },
+          {
+            "row": 7,
+            "values": [
+              "Top 1 Income",
+              "$126,400",
+              "$82,300",
+              "$82,300",
+              "$86,100",
+              100
+            ]
+          },
+          {
+            "row": 8,
+            "values": [
+              "Top 1 Housing Type",
+              "Single Family",
+              "Single Family",
+              "Single Family",
+              "Single Family",
+              100
+            ]
+          },
+          {
+            "row": 9,
+            "values": [
+              "Top 1 Occupation Type",
+              "Prof; Mgmt",
+              "Prof; Svcs",
+              "Prof; Svcs",
+              "Prof; Mgmt",
+              100
+            ]
+          },
+          {
+            "row": 10,
+            "values": [
+              "Top 1 Education",
+              "College Degree",
+              "College Degree",
+              "College Degree",
+              "College Degree",
+              100
+            ]
+          }
+        ],
+        "formula_count": 0
+      },
+      {
+        "name": "Tapestry Lifemode",
+        "rows": 196,
+        "columns": 6,
+        "nonempty_rows": 196,
+        "preview": [
+          {
+            "row": 1,
+            "values": [
+              "Tapestry Lifemode",
+              "Households",
+              "HHs %",
+              "% US HHs",
+              "Index",
+              "OD_ID"
+            ]
+          },
+          {
+            "row": 2,
+            "values": [
+              "Upscale Avenues (L2)",
+              0,
+              0,
+              0.055,
+              0,
+              100
+            ]
+          },
+          {
+            "row": 3,
+            "values": [
+              "Uptown Individuals (L3)",
+              0,
+              0,
+              0.0391,
+              0,
+              100
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              "Family Landscapes (L4)",
+              5189,
+              0.2562,
+              0.0791,
+              324,
+              100
+            ]
+          },
+          {
+            "row": 5,
+            "values": [
+              "GenXurban (L5)",
+              0,
+              0,
+              0.1114,
+              0,
+              100
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              "Cozy Country Living (L6)",
+              0,
+              0,
+              0.1181,
+              0,
+              100
+            ]
+          },
+          {
+            "row": 7,
+            "values": [
+              "Sprouting Explorers (L7)",
+              3795,
+              0.1874,
+              0.0753,
+              249,
+              100
+            ]
+          },
+          {
+            "row": 8,
+            "values": [
+              "Middle Ground (L8)",
+              0,
+              0,
+              0.1081,
+              0,
+              100
+            ]
+          },
+          {
+            "row": 9,
+            "values": [
+              "Senior Styles (L9)",
+              0,
+              0,
+              0.0579,
+              0,
+              100
+            ]
+          },
+          {
+            "row": 10,
+            "values": [
+              "Rustic Outposts (L10)",
+              0,
+              0,
+              0.0794,
+              0,
+              100
+            ]
+          }
+        ],
+        "formula_count": 0
+      },
+      {
+        "name": "Key Demographic by Generation",
+        "rows": 121,
+        "columns": 4,
+        "nonempty_rows": 121,
+        "preview": [
+          {
+            "row": 1,
+            "values": [
+              "Generation",
+              "Area Population",
+              "Harris County",
+              "OD_ID"
+            ]
+          },
+          {
+            "row": 2,
+            "values": [
+              "2022 Civilian Employed Male Pop Age 16+ (ACS 5-Yr)",
+              17015,
+              10817,
+              100
+            ]
+          },
+          {
+            "row": 3,
+            "values": [
+              "2022 Civilian Employed Female Pop Age 16+ (ACS 5-Yr)",
+              14266,
+              10017,
+              100
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              "2024 Millennial Pop",
+              14496,
+              10054,
+              100
+            ]
+          },
+          {
+            "row": 5,
+            "values": [
+              "2024 Generation Z Pop",
+              14977,
+              8598,
+              100
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              "2024 Generation Alpha Pop",
+              5493,
+              3306,
+              100
+            ]
+          },
+          {
+            "row": 7,
+            "values": [
+              "2029 Millennial Pop",
+              14356,
+              9166,
+              100
+            ]
+          },
+          {
+            "row": 8,
+            "values": [
+              "2029 Generation Z Pop",
+              14461,
+              9141,
+              100
+            ]
+          },
+          {
+            "row": 9,
+            "values": [
+              "2029 Generation Alpha Pop",
+              8717,
+              5041,
+              100
+            ]
+          },
+          {
+            "row": 10,
+            "values": [
+              "2022 Civilian Employed Male Pop Age 16+ (ACS 5-Yr)",
+              2844,
+              10694,
+              105
+            ]
+          }
+        ],
+        "formula_count": 0
+      }
+    ]
+  },
+  {
+    "path": "RAW/pnr_esrigc/TAZ DATA.xlsx",
+    "bytes": 248898,
+    "sheets": [
+      {
+        "name": "OD",
+        "rows": 114,
+        "columns": 6,
+        "nonempty_rows": 114,
+        "preview": [
+          {
+            "row": 1,
+            "values": [
+              "OD_ID",
+              "Shape",
+              "ODAREA",
+              "Shape_Length",
+              "Shape_Area",
+              "DissolvedID"
+            ]
+          },
+          {
+            "row": 2,
+            "values": [
+              1,
+              "Polygon",
+              "LAKE HOUSTON",
+              0.991536,
+              0.009126,
+              1002
+            ]
+          },
+          {
+            "row": 3,
+            "values": [
+              2,
+              "Polygon",
+              "ACRES HOME",
+              0.252392,
+              0.001953,
+              1004
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              3,
+              "Polygon",
+              "ADDICKS PARK TEN",
+              0.340616,
+              0.005271,
+              1006
+            ]
+          },
+          {
+            "row": 5,
+            "values": [
+              4,
+              "Polygon",
+              "AFTON OAKS / RIVER OAKS AREA",
+              0.169607,
+              0.000848,
+              1008
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              5,
+              "Polygon",
+              "ALDINE",
+              0.419305,
+              0.007112,
+              1010
+            ]
+          },
+          {
+            "row": 7,
+            "values": [
+              6,
+              "Polygon",
+              "ALIEF",
+              0.240699,
+              0.003642,
+              1012
+            ]
+          },
+          {
+            "row": 8,
+            "values": [
+              7,
+              "Polygon",
+              "ASTRODOME AREA",
+              0.138142,
+              0.000762,
+              1014
+            ]
+          },
+          {
+            "row": 9,
+            "values": [
+              8,
+              "Polygon",
+              "ATASCOCITA",
+              0.242372,
+              0.002265,
+              1016
+            ]
+          },
+          {
+            "row": 10,
+            "values": [
+              9,
+              "Polygon",
+              "BEAR CREEK",
+              0.337531,
+              0.005791,
+              1018
+            ]
+          }
+        ],
+        "formula_count": 0
+      },
+      {
+        "name": "SECT",
+        "rows": 1240,
+        "columns": 6,
+        "nonempty_rows": 1240,
+        "preview": [
+          {
+            "row": 1,
+            "values": [
+              "OBJECTID *",
+              "Shape *",
+              "TAZ",
+              "Sector",
+              "Shape_Length",
+              "Shape_Area"
+            ]
+          },
+          {
+            "row": 2,
+            "values": [
+              1,
+              "Polygon",
+              1500,
+              25,
+              0.316201,
+              0.003425
+            ]
+          },
+          {
+            "row": 3,
+            "values": [
+              2,
+              "Polygon",
+              1440,
+              25,
+              0.26549,
+              0.002225
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              3,
+              "Polygon",
+              1499,
+              25,
+              0.187452,
+              0.000841
+            ]
+          },
+          {
+            "row": 5,
+            "values": [
+              4,
+              "Polygon",
+              310,
+              22,
+              0.301612,
+              0.00186
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              5,
+              "Polygon",
+              1498,
+              25,
+              0.072877,
+              0.00016
+            ]
+          },
+          {
+            "row": 7,
+            "values": [
+              6,
+              "Polygon",
+              1478,
+              25,
+              0.081981,
+              0.000306
+            ]
+          },
+          {
+            "row": 8,
+            "values": [
+              7,
+              "Polygon",
+              1439,
+              25,
+              0.209468,
+              0.001936
+            ]
+          },
+          {
+            "row": 9,
+            "values": [
+              8,
+              "Polygon",
+              1492,
+              25,
+              0.114779,
+              0.000577
+            ]
+          },
+          {
+            "row": 10,
+            "values": [
+              9,
+              "Polygon",
+              1443,
+              25,
+              0.170378,
+              0.001491
+            ]
+          }
+        ],
+        "formula_count": 0
+      },
+      {
+        "name": "TAZ",
+        "rows": 1240,
+        "columns": 18,
+        "nonempty_rows": 1240,
+        "preview": [
+          {
+            "row": 1,
+            "values": [
+              "OBJECTID *",
+              "Shape *",
+              "AREA",
+              "PERIMETER",
+              "TZ48_D00_",
+              "TZ48_D00_I",
+              "STATE",
+              "COUNTY",
+              "TAZ *",
+              "NAME",
+              "LSAD",
+              "LSAD_TRANS",
+              "Shape_Length",
+              "Shape_Area",
+              "SERVICE",
+              "ADA",
+              "R_ADA",
+              "O-D AREAS *"
+            ]
+          },
+          {
+            "row": 2,
+            "values": [
+              643,
+              "Polygon",
+              0.000463,
+              0.090518,
+              12657,
+              12656,
+              48,
+              201,
+              1370,
+              1370,
+              " ",
+              " ",
+              0.090518,
+              0.000463,
+              1,
+              1,
+              "<Null>",
+              "WOODLAND OAKS"
+            ]
+          },
+          {
+            "row": 3,
+            "values": [
+              686,
+              "Polygon",
+              0.000442,
+              0.088962,
+              12758,
+              12757,
+              48,
+              201,
+              1372,
+              1372,
+              " ",
+              " ",
+              0.088962,
+              0.000442,
+              1,
+              1,
+              "<Null>",
+              "WOODLAND OAKS"
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              745,
+              "Polygon",
+              0.000158,
+              0.055446,
+              12909,
+              12908,
+              48,
+              201,
+              1374,
+              1374,
+              " ",
+              " ",
+              0.055446,
+              0.000158,
+              1,
+              1,
+              "<Null>",
+              "WOODLAND OAKS"
+            ]
+          },
+          {
+            "row": 5,
+            "values": [
+              519,
+              "Polygon",
+              0.000484,
+              0.097667,
+              12374,
+              12373,
+              48,
+              201,
+              1355,
+              1355,
+              " ",
+              " ",
+              0.097667,
+              0.000484,
+              1,
+              1,
+              1,
+              "WILLOWBROOK"
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              546,
+              "Polygon",
+              0.000149,
+              0.056287,
+              12449,
+              12448,
+              48,
+              201,
+              1464,
+              1464,
+              " ",
+              " ",
+              0.056287,
+              0.000149,
+              1,
+              1,
+              1,
+              "WILLOWBROOK"
+            ]
+          },
+          {
+            "row": 7,
+            "values": [
+              553,
+              "Polygon",
+              0.00025,
+              0.071019,
+              12471,
+              12470,
+              48,
+              201,
+              267,
+              267,
+              " ",
+              " ",
+              0.071019,
+              0.00025,
+              1,
+              1,
+              1,
+              "WILLOWBROOK"
+            ]
+          },
+          {
+            "row": 8,
+            "values": [
+              568,
+              "Polygon",
+              0.000274,
+              0.081928,
+              12499,
+              12498,
+              48,
+              201,
+              1463,
+              1463,
+              " ",
+              " ",
+              0.081928,
+              0.000274,
+              1,
+              1,
+              "<Null>",
+              "WILLOWBROOK"
+            ]
+          },
+          {
+            "row": 9,
+            "values": [
+              571,
+              "Polygon",
+              0.000526,
+              0.146346,
+              12505,
+              12504,
+              48,
+              201,
+              1378,
+              1378,
+              " ",
+              " ",
+              0.146346,
+              0.000526,
+              1,
+              1,
+              "<Null>",
+              "WILLOWBROOK"
+            ]
+          },
+          {
+            "row": 10,
+            "values": [
+              589,
+              "Polygon",
+              0.000279,
+              0.088086,
+              12545,
+              12544,
+              48,
+              201,
+              1363,
+              1363,
+              " ",
+              " ",
+              0.088086,
+              0.000279,
+              1,
+              1,
+              1,
+              "WILLOWBROOK"
+            ]
+          }
+        ],
+        "formula_count": 0
+      },
+      {
+        "name": "relate1",
+        "rows": 1240,
+        "columns": 7,
+        "nonempty_rows": 1240,
+        "preview": [
+          {
+            "row": 1,
+            "values": [
+              "OBJECTID *",
+              "Join_Count",
+              "TARGET_FID",
+              "TAZ *",
+              "GEOID20",
+              "Shape_Length",
+              "Shape_Area"
+            ]
+          },
+          {
+            "row": 2,
+            "values": [
+              1,
+              10,
+              262,
+              1500,
+              48339691302,
+              0.316201,
+              0.003425
+            ]
+          },
+          {
+            "row": 3,
+            "values": [
+              2,
+              5,
+              272,
+              1440,
+              48473680303,
+              0.26549,
+              0.002225
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              3,
+              5,
+              283,
+              1499,
+              48339690603,
+              0.187452,
+              0.000841
+            ]
+          },
+          {
+            "row": 5,
+            "values": [
+              4,
+              8,
+              290,
+              310,
+              48201251504,
+              0.301612,
+              0.00186
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              5,
+              6,
+              296,
+              1498,
+              48339690603,
+              0.072877,
+              0.00016
+            ]
+          },
+          {
+            "row": 7,
+            "values": [
+              6,
+              2,
+              297,
+              1478,
+              48201555401,
+              0.081981,
+              0.000306
+            ]
+          },
+          {
+            "row": 8,
+            "values": [
+              7,
+              2,
+              303,
+              1439,
+              48473680601,
+              0.209468,
+              0.001936
+            ]
+          },
+          {
+            "row": 9,
+            "values": [
+              8,
+              5,
+              311,
+              1492,
+              48201554908,
+              0.114779,
+              0.000577
+            ]
+          },
+          {
+            "row": 10,
+            "values": [
+              9,
+              2,
+              312,
+              1443,
+              48473680601,
+              0.170378,
+              0.001491
+            ]
+          }
+        ],
+        "formula_count": 0
+      }
+    ]
+  },
+  {
+    "path": "RAW/pnr_esrigj/EXTERNAL_EJ_DC_CT.json",
+    "bytes": 5327100,
+    "top_keys": [
+      "type",
+      "features"
+    ],
+    "feature_count": 679,
+    "fields": null,
+    "geometry_type": null,
+    "spatial_reference": null,
+    "sample_properties": [
+      {
+        "OBJECTID": 51,
+        "tract": "48201532800",
+        "tract_sf": 14501292.333949467,
+        "Census_tract_ID": 48201532800,
+        "County_Name": "Harris County",
+        "State": "Texas",
+        "Total_90theed": 3,
+        "Disadvantage_Community": "Yes",
+        "Population": 1951,
+        "Low_Income_Higher_ed_Enrollment_rate": "Yes",
+        "AgLoss_90th": "No",
+        "AgLoss_pt": 0,
+        "AgLoss_rate": 0,
+        "BuildingLoss_90th": "Yes",
+        "BuildingLoss_pt": 99,
+        "BuildingLoss_rate": 0.7982,
+        "PopLoss_90th": "No",
+        "PopLoss_pt": 87,
+        "PopLoss_rate": 0.0007,
+        "EnergyBurden_90th": "No",
+        "EnergyBurden_pt": 59,
+        "EnergyBurden_rate": 3,
+        "PM25_90th": "Yes",
+        "PM25_pt": 91,
+        "PM25_rate": 10.04,
+        "Diesel_90th": "No",
+        "Diesel_pt": 77,
+        "Diesel_rate": 0.66,
+        "Traffic_90th": "No",
+        "Traffic_pt": 54,
+        "Traffic_rate": 351.22,
+        "HousingBurden_90th": "No",
+        "HousingBurden_pt": 62,
+        "HousingBurden_rate": 26,
+        "LeadPaint_90th": "No",
+        "LeadPaint_pt": 6,
+        "LeadPaint_housing": 0,
+        "MedianValue_pt": 32,
+        "MedianValue_unit": 140200,
+        "Waste_90th": "No",
+        "Waste_pt": 45,
+        "Waste_prox": 0.85,
+        "Superfund_90th": "No",
+        "Superfund_pt": 62,
+        "Superfund_prox": 0.08,
+        "RMP_90th": "No",
+        "RMP_pt": 73,
+        "RMP_prox": 0.95,
+        "Wastewater_90th": "No",
+        "Wastewater_pt": 82,
+        "Wastewater_prox": 0.08,
+        "Asthma_90th": "No",
+        "Asthma_pt": 46,
+        "Asthma_over18": 950,
+        "Diabetes_90th": "No",
+        "Diabetes_pt": 87,
+        "Diabetes_over18": 1490,
+        "Heart_90th": "No",
+        "Heart_pt": 66,
+        "Heart_over18": 680,
+        "LowLife_90th": "No",
+        "LowLife_pt": 59,
+        "LowLife_year": 77.5,
+        "LowMedian_90th": "No",
+        "LowMedian_pt": 43,
+        "LowMedian_rate": 100,
+        "Linguistic_90th": "Yes",
+        "Linguistic_pt": 94,
+        "Linguistic_rate": 22,
+        "Unemployment_90th": "No",
+        "Unemployment_pt": 64,
+        "Unemployment_rate": 6,
+        "PovertyLine100_90th": "No",
+        "PovertyLine200_pt": 77,
+        "PovertyLine100_pt": 74,
+        "PovertyLine100_rate": 47,
+        "LessHighSchool_pt": 91,
+        "LessHighSchool_rate": 29,
+        "PovertyLine_100_rate": 24,
+        "Unemployment_LowHS_90th": "No",
+        "PovertyLine100_LowHS_90th": "No",
+        "LowMedian_LowHS_90th": "No",
+        "Shape_Length": 24416.35040034259,
+        "Shape_Area": 14501292.426262
+      },
+      {
+        "OBJECTID": 52,
+        "tract": "48201532100",
+        "tract_sf": 20392916.67789745,
+        "Census_tract_ID": 48201532100,
+        "County_Name": "Harris County",
+        "State": "Texas",
+        "Total_90theed": 4,
+        "Disadvantage_Community": "Yes",
+        "Population": 7176,
+        "Low_Income_Higher_ed_Enrollment_rate": "Yes",
+        "AgLoss_90th": "No",
+        "AgLoss_pt": 0,
+        "AgLoss_rate": 0,
+        "BuildingLoss_90th": "Yes",
+        "BuildingLoss_pt": 98,
+        "BuildingLoss_rate": 0.3144,
+        "PopLoss_90th": "No",
+        "PopLoss_pt": 77,
+        "PopLoss_rate": 0.0005,
+        "EnergyBurden_90th": "No",
+        "EnergyBurden_pt": 41,
+        "EnergyBurden_rate": 2,
+        "PM25_90th": "Yes",
+        "PM25_pt": 91,
+        "PM25_rate": 10.05,
+        "Diesel_90th": "No",
+        "Diesel_pt": 86,
+        "Diesel_rate": 0.81,
+        "Traffic_90th": "No",
+        "Traffic_pt": 44,
+        "Traffic_rate": 241.76,
+        "HousingBurden_90th": "No",
+        "HousingBurden_pt": 88,
+        "HousingBurden_rate": 41,
+        "LeadPaint_90th": "No",
+        "LeadPaint_pt": 19,
+        "LeadPaint_housing": 4,
+        "MedianValue_pt": 46,
+        "MedianValue_unit": 179400,
+        "Waste_90th": "No",
+        "Waste_pt": 72,
+        "Waste_prox": 2.91,
+        "Superfund_90th": "No",
+        "Superfund_pt": 59,
+        "Superfund_prox": 0.08,
+        "RMP_90th": "No",
+        "RMP_pt": 76,
+        "RMP_prox": 1.06,
+        "Wastewater_90th": "No",
+        "Wastewater_pt": 84,
+        "Wastewater_prox": 0.12,
+        "Asthma_90th": "No",
+        "Asthma_pt": 57,
+        "Asthma_over18": 990,
+        "Diabetes_90th": "No",
+        "Diabetes_pt": 85,
+        "Diabetes_over18": 1450,
+        "Heart_90th": "No",
+        "Heart_pt": 62,
+        "Heart_over18": 660,
+        "LowLife_90th": "No",
+        "LowLife_pt": 18,
+        "LowLife_year": 81.7,
+        "LowMedian_90th": "Yes",
+        "LowMedian_pt": 94,
+        "LowMedian_rate": 46,
+        "Linguistic_90th": "Yes",
+        "Linguistic_pt": 96,
+        "Linguistic_rate": 29,
+        "Unemployment_90th": "No",
+        "Unemployment_pt": 73,
+        "Unemployment_rate": 7,
+        "PovertyLine100_90th": "No",
+        "PovertyLine200_pt": 89,
+        "PovertyLine100_pt": 89,
+        "PovertyLine100_rate": 59,
+        "LessHighSchool_pt": 89,
+        "LessHighSchool_rate": 26,
+        "PovertyLine_100_rate": 41,
+        "Unemployment_LowHS_90th": "No",
+        "PovertyLine100_LowHS_90th": "No",
+        "LowMedian_LowHS_90th": "No",
+        "Shape_Length": 18793.715420161447,
+        "Shape_Area": 20392916.581438
+      }
+    ],
+    "property_keys": [
+      "OBJECTID",
+      "tract",
+      "tract_sf",
+      "Census_tract_ID",
+      "County_Name",
+      "State",
+      "Total_90theed",
+      "Disadvantage_Community",
+      "Population",
+      "Low_Income_Higher_ed_Enrollment_rate",
+      "AgLoss_90th",
+      "AgLoss_pt",
+      "AgLoss_rate",
+      "BuildingLoss_90th",
+      "BuildingLoss_pt",
+      "BuildingLoss_rate",
+      "PopLoss_90th",
+      "PopLoss_pt",
+      "PopLoss_rate",
+      "EnergyBurden_90th",
+      "EnergyBurden_pt",
+      "EnergyBurden_rate",
+      "PM25_90th",
+      "PM25_pt",
+      "PM25_rate",
+      "Diesel_90th",
+      "Diesel_pt",
+      "Diesel_rate",
+      "Traffic_90th",
+      "Traffic_pt",
+      "Traffic_rate",
+      "HousingBurden_90th",
+      "HousingBurden_pt",
+      "HousingBurden_rate",
+      "LeadPaint_90th",
+      "LeadPaint_pt",
+      "LeadPaint_housing",
+      "MedianValue_pt",
+      "MedianValue_unit",
+      "Waste_90th",
+      "Waste_pt",
+      "Waste_prox",
+      "Superfund_90th",
+      "Superfund_pt",
+      "Superfund_prox",
+      "RMP_90th",
+      "RMP_pt",
+      "RMP_prox",
+      "Wastewater_90th",
+      "Wastewater_pt",
+      "Wastewater_prox",
+      "Asthma_90th",
+      "Asthma_pt",
+      "Asthma_over18",
+      "Diabetes_90th",
+      "Diabetes_pt",
+      "Diabetes_over18",
+      "Heart_90th",
+      "Heart_pt",
+      "Heart_over18",
+      "LowLife_90th",
+      "LowLife_pt",
+      "LowLife_year",
+      "LowMedian_90th",
+      "LowMedian_pt",
+      "LowMedian_rate",
+      "Linguistic_90th",
+      "Linguistic_pt",
+      "Linguistic_rate",
+      "Unemployment_90th",
+      "Unemployment_pt",
+      "Unemployment_rate",
+      "PovertyLine100_90th",
+      "PovertyLine200_pt",
+      "PovertyLine100_pt",
+      "PovertyLine100_rate",
+      "LessHighSchool_pt",
+      "LessHighSchool_rate",
+      "PovertyLine_100_rate",
+      "Unemployment_LowHS_90th",
+      "PovertyLine100_LowHS_90th",
+      "LowMedian_LowHS_90th",
+      "Shape_Length",
+      "Shape_Area"
+    ],
+    "null_counts": {
+      "OBJECTID": 0,
+      "tract": 0,
+      "tract_sf": 0,
+      "Census_tract_ID": 0,
+      "County_Name": 0,
+      "State": 0,
+      "Total_90theed": 0,
+      "Disadvantage_Community": 0,
+      "Population": 0,
+      "Low_Income_Higher_ed_Enrollment_rate": 0,
+      "AgLoss_90th": 0,
+      "AgLoss_pt": 0,
+      "AgLoss_rate": 0,
+      "BuildingLoss_90th": 0,
+      "BuildingLoss_pt": 0,
+      "BuildingLoss_rate": 0,
+      "PopLoss_90th": 0,
+      "PopLoss_pt": 0,
+      "PopLoss_rate": 0,
+      "EnergyBurden_90th": 0,
+      "EnergyBurden_pt": 2,
+      "EnergyBurden_rate": 2,
+      "PM25_90th": 0,
+      "PM25_pt": 0,
+      "PM25_rate": 0,
+      "Diesel_90th": 0,
+      "Diesel_pt": 0,
+      "Diesel_rate": 0,
+      "Traffic_90th": 0,
+      "Traffic_pt": 0,
+      "Traffic_rate": 0,
+      "HousingBurden_90th": 0,
+      "HousingBurden_pt": 3,
+      "HousingBurden_rate": 3,
+      "LeadPaint_90th": 0,
+      "LeadPaint_pt": 0,
+      "LeadPaint_housing": 0,
+      "MedianValue_pt": 25,
+      "MedianValue_unit": 25,
+      "Waste_90th": 0,
+      "Waste_pt": 0,
+      "Waste_prox": 0,
+      "Superfund_90th": 0,
+      "Superfund_pt": 0,
+      "Superfund_prox": 0,
+      "RMP_90th": 0,
+      "RMP_pt": 0,
+      "RMP_prox": 0,
+      "Wastewater_90th": 0,
+      "Wastewater_pt": 14,
+      "Wastewater_prox": 14,
+      "Asthma_90th": 0,
+      "Asthma_pt": 1,
+      "Asthma_over18": 1,
+      "Diabetes_90th": 0,
+      "Diabetes_pt": 1,
+      "Diabetes_over18": 1,
+      "Heart_90th": 0,
+      "Heart_pt": 1,
+      "Heart_over18": 1,
+      "LowLife_90th": 0,
+      "LowLife_pt": 75,
+      "LowLife_year": 75,
+      "LowMedian_90th": 0,
+      "LowMedian_pt": 4,
+      "LowMedian_rate": 4,
+      "Linguistic_90th": 0,
+      "Linguistic_pt": 2,
+      "Linguistic_rate": 2,
+      "Unemployment_90th": 0,
+      "Unemployment_pt": 1,
+      "Unemployment_rate": 1,
+      "PovertyLine100_90th": 0,
+      "PovertyLine200_pt": 2,
+      "PovertyLine100_pt": 2,
+      "PovertyLine100_rate": 2,
+      "LessHighSchool_pt": 0,
+      "LessHighSchool_rate": 0,
+      "PovertyLine_100_rate": 1,
+      "Unemployment_LowHS_90th": 0,
+      "PovertyLine100_LowHS_90th": 0,
+      "LowMedian_LowHS_90th": 0,
+      "Shape_Length": 0,
+      "Shape_Area": 0
+    },
+    "unique_counts": {
+      "OBJECTID": 679,
+      "tract": 679,
+      "tract_sf": 679,
+      "Census_tract_ID": 679,
+      "County_Name": 2,
+      "State": 1,
+      "Total_90theed": 15,
+      "Disadvantage_Community": 2,
+      "Population": 655,
+      "Low_Income_Higher_ed_Enrollment_rate": 2,
+      "AgLoss_90th": 1,
+      "AgLoss_pt": 80,
+      "AgLoss_rate": 241,
+      "BuildingLoss_90th": 2,
+      "BuildingLoss_pt": 7,
+      "BuildingLoss_rate": 518,
+      "PopLoss_90th": 1,
+      "PopLoss_pt": 24,
+      "PopLoss_rate": 6,
+      "EnergyBurden_90th": 2,
+      "EnergyBurden_pt": 54,
+      "EnergyBurden_rate": 10,
+      "PM25_90th": 2,
+      "PM25_pt": 23,
+      "PM25_rate": 70,
+      "Diesel_90th": 2,
+      "Diesel_pt": 53,
+      "Diesel_rate": 104,
+      "Traffic_90th": 2,
+      "Traffic_pt": 89,
+      "Traffic_rate": 677,
+      "HousingBurden_90th": 2,
+      "HousingBurden_pt": 100,
+      "HousingBurden_rate": 65,
+      "LeadPaint_90th": 2,
+      "LeadPaint_pt": 94,
+      "LeadPaint_housing": 84,
+      "MedianValue_pt": 101,
+      "MedianValue_unit": 595,
+      "Waste_90th": 2,
+      "Waste_pt": 80,
+      "Waste_prox": 323,
+      "Superfund_90th": 2,
+      "Superfund_pt": 67,
+      "Superfund_prox": 86,
+      "RMP_90th": 2,
+      "RMP_pt": 83,
+      "RMP_prox": 260,
+      "Wastewater_90th": 2,
+      "Wastewater_pt": 76,
+      "Wastewater_prox": 76,
+      "Asthma_90th": 2,
+      "Asthma_pt": 53,
+      "Asthma_over18": 66,
+      "Diabetes_90th": 2,
+      "Diabetes_pt": 91,
+      "Diabetes_over18": 183,
+      "Heart_90th": 2,
+      "Heart_pt": 70,
+      "Heart_over18": 88,
+      "LowLife_90th": 2,
+      "LowLife_pt": 101,
+      "LowLife_year": 161,
+      "LowMedian_90th": 2,
+      "LowMedian_pt": 100,
+      "LowMedian_rate": 191,
+      "Linguistic_90th": 2,
+      "Linguistic_pt": 75,
+      "Linguistic_rate": 65,
+      "Unemployment_90th": 2,
+      "Unemployment_pt": 100,
+      "Unemployment_rate": 24,
+      "PovertyLine100_90th": 2,
+      "PovertyLine200_pt": 100,
+      "PovertyLine100_pt": 101,
+      "PovertyLine100_rate": 86,
+      "LessHighSchool_pt": 95,
+      "LessHighSchool_rate": 63,
+      "PovertyLine_100_rate": 57,
+      "Unemployment_LowHS_90th": 1,
+      "PovertyLine100_LowHS_90th": 1,
+      "LowMedian_LowHS_90th": 1,
+      "Shape_Length": 679,
+      "Shape_Area": 679
+    }
+  },
+  {
+    "path": "RAW/pnr_esrigj/EXTERNAL_HGAC_Forecast_CT.json",
+    "bytes": 5850648,
+    "top_keys": [
+      "type",
+      "features"
+    ],
+    "feature_count": 979,
+    "fields": null,
+    "geometry_type": null,
+    "spatial_reference": null,
+    "sample_properties": [
+      {
+        "OBJECTID": 9,
+        "Tract": "48201541603",
+        "County": "Harris",
+        "Area_SqMi": 0.9160931398160019,
+        "hh_2020": 2304,
+        "hh_2025": 2312,
+        "hh_2030": 2258,
+        "hh_2035": 2302,
+        "hh_2040": 2343,
+        "hh_2045": 2353,
+        "hh_2050": 2353,
+        "hp_2020": 7748,
+        "hp_2025": 7876,
+        "hp_2030": 7709,
+        "hp_2035": 7643,
+        "hp_2040": 7839,
+        "hp_2045": 7551,
+        "hp_2050": 7479,
+        "j_2020": 1831,
+        "j_2025": 1847,
+        "j_2030": 1949,
+        "j_2035": 1954,
+        "j_2040": 1958,
+        "j_2045": 1963,
+        "j_2050": 1968,
+        "pc_2050": -269,
+        "hc_2050": 49,
+        "jc_2050": 137,
+        "Shape_Length": 22706.945947887856,
+        "Shape_Area": 25539210.985733215
+      },
+      {
+        "OBJECTID": 10,
+        "Tract": "48201221701",
+        "County": "Harris",
+        "Area_SqMi": 1.1184341004094038,
+        "hh_2020": 1057,
+        "hh_2025": 1105,
+        "hh_2030": 1116,
+        "hh_2035": 1116,
+        "hh_2040": 1272,
+        "hh_2045": 1272,
+        "hh_2050": 1272,
+        "hp_2020": 4028,
+        "hp_2025": 4164,
+        "hp_2030": 4065,
+        "hp_2035": 3955,
+        "hp_2040": 4614,
+        "hp_2045": 4530,
+        "hp_2050": 4416,
+        "j_2020": 1067,
+        "j_2025": 1080,
+        "j_2030": 1155,
+        "j_2035": 1155,
+        "j_2040": 1250,
+        "j_2045": 1250,
+        "j_2050": 1250,
+        "pc_2050": 388,
+        "hc_2050": 215,
+        "jc_2050": 183,
+        "Shape_Length": 23549.89789645101,
+        "Shape_Area": 31180153.22080851
+      }
+    ],
+    "property_keys": [
+      "OBJECTID",
+      "Tract",
+      "County",
+      "Area_SqMi",
+      "hh_2020",
+      "hh_2025",
+      "hh_2030",
+      "hh_2035",
+      "hh_2040",
+      "hh_2045",
+      "hh_2050",
+      "hp_2020",
+      "hp_2025",
+      "hp_2030",
+      "hp_2035",
+      "hp_2040",
+      "hp_2045",
+      "hp_2050",
+      "j_2020",
+      "j_2025",
+      "j_2030",
+      "j_2035",
+      "j_2040",
+      "j_2045",
+      "j_2050",
+      "pc_2050",
+      "hc_2050",
+      "jc_2050",
+      "Shape_Length",
+      "Shape_Area"
+    ],
+    "null_counts": {
+      "OBJECTID": 0,
+      "Tract": 0,
+      "County": 0,
+      "Area_SqMi": 0,
+      "hh_2020": 0,
+      "hh_2025": 0,
+      "hh_2030": 0,
+      "hh_2035": 0,
+      "hh_2040": 0,
+      "hh_2045": 0,
+      "hh_2050": 0,
+      "hp_2020": 0,
+      "hp_2025": 0,
+      "hp_2030": 0,
+      "hp_2035": 0,
+      "hp_2040": 0,
+      "hp_2045": 0,
+      "hp_2050": 0,
+      "j_2020": 0,
+      "j_2025": 0,
+      "j_2030": 0,
+      "j_2035": 0,
+      "j_2040": 0,
+      "j_2045": 0,
+      "j_2050": 0,
+      "pc_2050": 0,
+      "hc_2050": 0,
+      "jc_2050": 0,
+      "Shape_Length": 0,
+      "Shape_Area": 0
+    },
+    "unique_counts": {
+      "OBJECTID": 979,
+      "Tract": 979,
+      "County": 3,
+      "Area_SqMi": 979,
+      "hh_2020": 786,
+      "hh_2025": 773,
+      "hh_2030": 776,
+      "hh_2035": 804,
+      "hh_2040": 813,
+      "hh_2045": 804,
+      "hh_2050": 830,
+      "hp_2020": 904,
+      "hp_2025": 889,
+      "hp_2030": 905,
+      "hp_2035": 905,
+      "hp_2040": 909,
+      "hp_2045": 925,
+      "hp_2050": 908,
+      "j_2020": 868,
+      "j_2025": 856,
+      "j_2030": 878,
+      "j_2035": 873,
+      "j_2040": 882,
+      "j_2045": 890,
+      "j_2050": 886,
+      "pc_2050": 876,
+      "hc_2050": 656,
+      "jc_2050": 557,
+      "Shape_Length": 979,
+      "Shape_Area": 979
+    }
+  },
+  {
+    "path": "RAW/pnr_esrigj/EXTERNAL_HGAC_OA_CT.json",
+    "bytes": 5100698,
+    "top_keys": [
+      "type",
+      "features"
+    ],
+    "feature_count": 679,
+    "fields": null,
+    "geometry_type": null,
+    "spatial_reference": null,
+    "sample_properties": [
+      {
+        "OBJECTID": 51,
+        "Tract": "48201532800",
+        "Area_SqMi": 0.52016437,
+        "County": "Harris",
+        "fips": "48201532800",
+        "total": 943,
+        "management": 87,
+        "business": 60,
+        "computer_math": 14,
+        "architect_engineer": 9,
+        "life_physical": 0,
+        "community_social": 5,
+        "legal": 6,
+        "education": 55,
+        "art_ent_sport": 22,
+        "health_diagnose": 17,
+        "health_tech": 0,
+        "health_support": 8,
+        "protective": 14,
+        "law_enforce": 34,
+        "food_service": 36,
+        "clean_maintain": 70,
+        "personal_care": 45,
+        "sale": 77,
+        "office_admin": 109,
+        "farm_fish": 0,
+        "construction": 81,
+        "install_repair": 77,
+        "production": 55,
+        "transportation": 55,
+        "material_move": 7,
+        "e_total": 45818,
+        "e_management": 60682,
+        "e_service": 41250,
+        "e_sales": 57143,
+        "e_resources": 25391,
+        "e_production": 45871,
+        "lq_management": 0.91071666,
+        "lq_business": 1.09988045,
+        "lq_computer_math": 0.56152854,
+        "lq_architect_engineer": 0.32359982,
+        "lq_life_physical": 0,
+        "lq_community_social": 0.43505467,
+        "lq_legal": 0.56403778,
+        "lq_education": 0.99743606,
+        "lq_art_ent_sport": 1.50581649,
+        "lq_health_diagnose": 0.49831996,
+        "lq_health_tech": 0,
+        "lq_health_support": 0.34613042,
+        "lq_protective": 1.26983803,
+        "lq_law_enforce": 3.92020215,
+        "lq_food_service": 0.71033415,
+        "lq_clean_maintain": 1.79487979,
+        "lq_personal_care": 1.86608835,
+        "lq_sale": 0.75469729,
+        "lq_office_admin": 1.07688335,
+        "lq_farm_fish": 0,
+        "lq_construction": 1.15214749,
+        "lq_install_repair": 2.43090491,
+        "lq_production": 1.05448113,
+        "lq_transportation": 1.45412096,
+        "lq_material_move": 0.2138407,
+        "s_total": 12,
+        "s_management": 0,
+        "s_service": 12,
+        "s_sales": 0,
+        "s_resources": 0,
+        "s_production": 0
+      },
+      {
+        "OBJECTID": 52,
+        "Tract": "48201532100",
+        "Area_SqMi": 0.73149816,
+        "County": "Harris",
+        "fips": "48201532100",
+        "total": 3582,
+        "management": 250,
+        "business": 35,
+        "computer_math": 23,
+        "architect_engineer": 69,
+        "life_physical": 21,
+        "community_social": 10,
+        "legal": 0,
+        "education": 137,
+        "art_ent_sport": 80,
+        "health_diagnose": 0,
+        "health_tech": 113,
+        "health_support": 38,
+        "protective": 17,
+        "law_enforce": 0,
+        "food_service": 296,
+        "clean_maintain": 329,
+        "personal_care": 102,
+        "sale": 298,
+        "office_admin": 269,
+        "farm_fish": 0,
+        "construction": 553,
+        "install_repair": 111,
+        "production": 440,
+        "transportation": 99,
+        "material_move": 292,
+        "e_total": 25706,
+        "e_management": 53417,
+        "e_service": 16298,
+        "e_sales": 23554,
+        "e_resources": 26903,
+        "e_production": 25845,
+        "lq_management": 0.68895388,
+        "lq_business": 0.16890729,
+        "lq_computer_math": 0.24286098,
+        "lq_architect_engineer": 0.653132,
+        "lq_life_physical": 0.50464253,
+        "lq_community_social": 0.22906564,
+        "lq_legal": 0,
+        "lq_education": 0.65407727,
+        "lq_art_ent_sport": 1.44153591,
+        "lq_health_diagnose": 0,
+        "lq_health_tech": 1.77747183,
+        "lq_health_support": 0.43283213,
+        "lq_protective": 0.4059339,
+        "lq_law_enforce": 0,
+        "lq_food_service": 1.53758104,
+        "lq_clean_maintain": 2.22085056,
+        "lq_personal_care": 1.11354038,
+        "lq_sale": 0.76892582,
+        "lq_office_admin": 0.69964954,
+        "lq_farm_fish": 0,
+        "lq_construction": 2.07078162,
+        "lq_install_repair": 0.9225424,
+        "lq_production": 2.22082793,
+        "lq_transportation": 0.68906335,
+        "lq_material_move": 2.34834172,
+        "s_total": 31,
+        "s_management": 0,
+        "s_service": 0,
+        "s_sales": 31,
+        "s_resources": 0,
+        "s_production": 0
+      }
+    ],
+    "property_keys": [
+      "OBJECTID",
+      "Tract",
+      "Area_SqMi",
+      "County",
+      "fips",
+      "total",
+      "management",
+      "business",
+      "computer_math",
+      "architect_engineer",
+      "life_physical",
+      "community_social",
+      "legal",
+      "education",
+      "art_ent_sport",
+      "health_diagnose",
+      "health_tech",
+      "health_support",
+      "protective",
+      "law_enforce",
+      "food_service",
+      "clean_maintain",
+      "personal_care",
+      "sale",
+      "office_admin",
+      "farm_fish",
+      "construction",
+      "install_repair",
+      "production",
+      "transportation",
+      "material_move",
+      "e_total",
+      "e_management",
+      "e_service",
+      "e_sales",
+      "e_resources",
+      "e_production",
+      "lq_management",
+      "lq_business",
+      "lq_computer_math",
+      "lq_architect_engineer",
+      "lq_life_physical",
+      "lq_community_social",
+      "lq_legal",
+      "lq_education",
+      "lq_art_ent_sport",
+      "lq_health_diagnose",
+      "lq_health_tech",
+      "lq_health_support",
+      "lq_protective",
+      "lq_law_enforce",
+      "lq_food_service",
+      "lq_clean_maintain",
+      "lq_personal_care",
+      "lq_sale",
+      "lq_office_admin",
+      "lq_farm_fish",
+      "lq_construction",
+      "lq_install_repair",
+      "lq_production",
+      "lq_transportation",
+      "lq_material_move",
+      "s_total",
+      "s_management",
+      "s_service",
+      "s_sales",
+      "s_resources",
+      "s_production"
+    ],
+    "null_counts": {
+      "OBJECTID": 0,
+      "Tract": 0,
+      "Area_SqMi": 0,
+      "County": 0,
+      "fips": 0,
+      "total": 0,
+      "management": 0,
+      "business": 0,
+      "computer_math": 0,
+      "architect_engineer": 0,
+      "life_physical": 0,
+      "community_social": 0,
+      "legal": 0,
+      "education": 0,
+      "art_ent_sport": 0,
+      "health_diagnose": 0,
+      "health_tech": 0,
+      "health_support": 0,
+      "protective": 0,
+      "law_enforce": 0,
+      "food_service": 0,
+      "clean_maintain": 0,
+      "personal_care": 0,
+      "sale": 0,
+      "office_admin": 0,
+      "farm_fish": 0,
+      "construction": 0,
+      "install_repair": 0,
+      "production": 0,
+      "transportation": 0,
+      "material_move": 0,
+      "e_total": 1,
+      "e_management": 3,
+      "e_service": 37,
+      "e_sales": 6,
+      "e_resources": 105,
+      "e_production": 67,
+      "lq_management": 1,
+      "lq_business": 1,
+      "lq_computer_math": 1,
+      "lq_architect_engineer": 1,
+      "lq_life_physical": 1,
+      "lq_community_social": 1,
+      "lq_legal": 1,
+      "lq_education": 1,
+      "lq_art_ent_sport": 1,
+      "lq_health_diagnose": 1,
+      "lq_health_tech": 1,
+      "lq_health_support": 1,
+      "lq_protective": 1,
+      "lq_law_enforce": 1,
+      "lq_food_service": 1,
+      "lq_clean_maintain": 1,
+      "lq_personal_care": 1,
+      "lq_sale": 1,
+      "lq_office_admin": 1,
+      "lq_farm_fish": 1,
+      "lq_construction": 1,
+      "lq_install_repair": 1,
+      "lq_production": 1,
+      "lq_transportation": 1,
+      "lq_material_move": 1,
+      "s_total": 0,
+      "s_management": 0,
+      "s_service": 0,
+      "s_sales": 0,
+      "s_resources": 0,
+      "s_production": 0
+    },
+    "unique_counts": {
+      "OBJECTID": 679,
+      "Tract": 679,
+      "Area_SqMi": 679,
+      "County": 2,
+      "fips": 679,
+      "total": 628,
+      "management": 405,
+      "business": 338,
+      "computer_math": 215,
+      "architect_engineer": 226,
+      "life_physical": 137,
+      "community_social": 129,
+      "legal": 150,
+      "education": 319,
+      "art_ent_sport": 151,
+      "health_diagnose": 237,
+      "health_tech": 160,
+      "health_support": 201,
+      "protective": 141,
+      "law_enforce": 101,
+      "food_service": 324,
+      "clean_maintain": 293,
+      "personal_care": 201,
+      "sale": 411,
+      "office_admin": 405,
+      "farm_fish": 44,
+      "construction": 373,
+      "install_repair": 229,
+      "production": 305,
+      "transportation": 266,
+      "material_move": 242,
+      "e_total": 668,
+      "e_management": 659,
+      "e_service": 624,
+      "e_sales": 660,
+      "e_resources": 554,
+      "e_production": 586,
+      "lq_management": 668,
+      "lq_business": 647,
+      "lq_computer_math": 568,
+      "lq_architect_engineer": 556,
+      "lq_life_physical": 450,
+      "lq_community_social": 517,
+      "lq_legal": 438,
+      "lq_education": 661,
+      "lq_art_ent_sport": 565,
+      "lq_health_diagnose": 580,
+      "lq_health_tech": 574,
+      "lq_health_support": 613,
+      "lq_protective": 513,
+      "lq_law_enforce": 351,
+      "lq_food_service": 663,
+      "lq_clean_maintain": 604,
+      "lq_personal_care": 626,
+      "lq_sale": 679,
+      "lq_office_admin": 677,
+      "lq_farm_fish": 87,
+      "lq_construction": 643,
+      "lq_install_repair": 609,
+      "lq_production": 657,
+      "lq_transportation": 643,
+      "lq_material_move": 620,
+      "s_total": 219,
+      "s_management": 160,
+      "s_service": 66,
+      "s_sales": 89,
+      "s_resources": 61,
+      "s_production": 59
+    }
+  },
+  {
+    "path": "RAW/pnr_esrigj/METRO_Pln_DissolvedOD.json",
+    "bytes": 188162,
+    "top_keys": [
+      "type",
+      "features"
+    ],
+    "feature_count": 113,
+    "fields": null,
+    "geometry_type": null,
+    "spatial_reference": null,
+    "sample_properties": [
+      {
+        "OBJECTID": 1,
+        "ODAREA": "LAKE HOUSTON",
+        "Shape_Length": 0.9915363649706734,
+        "Shape_Area": 0.009125696609148188,
+        "DissolvedID": 1002
+      },
+      {
+        "OBJECTID": 2,
+        "ODAREA": "ACRES HOME",
+        "Shape_Length": 0.25239202314317444,
+        "Shape_Area": 0.0019531199040612721,
+        "DissolvedID": 1004
+      }
+    ],
+    "property_keys": [
+      "OBJECTID",
+      "ODAREA",
+      "Shape_Length",
+      "Shape_Area",
+      "DissolvedID"
+    ],
+    "null_counts": {
+      "OBJECTID": 0,
+      "ODAREA": 0,
+      "Shape_Length": 0,
+      "Shape_Area": 0,
+      "DissolvedID": 0
+    },
+    "unique_counts": {
+      "OBJECTID": 113,
+      "ODAREA": 113,
+      "Shape_Length": 113,
+      "Shape_Area": 113,
+      "DissolvedID": 113
+    }
+  },
+  {
+    "path": "RAW/pnr_esrigj/METRO_Pln_TAZ48d00.json",
+    "bytes": 1055626,
+    "top_keys": [
+      "type",
+      "features"
+    ],
+    "feature_count": 1239,
+    "fields": null,
+    "geometry_type": null,
+    "spatial_reference": null,
+    "sample_properties": [
+      {
+        "OBJECTID": 262,
+        "AREA": 0.00342546785949982,
+        "PERIMETER": 0.316200518898495,
+        "TZ48_D00_": 11651,
+        "TZ48_D00_I": 11650,
+        "STATE": "48",
+        "COUNTY": "201",
+        "TAZ": "  1500",
+        "NAME": "  1500",
+        "LSAD": " ",
+        "LSAD_TRANS": " ",
+        "Shape_Length": 0.31620051792428006,
+        "Shape_Area": 0.003425467850066345,
+        "METRO_SERVICE": 1,
+        "METRO_LIFT": null,
+        "METRO_LFIT2": null,
+        "ODAREA": "HUFSMITH / WILLOW"
+      },
+      {
+        "OBJECTID": 272,
+        "AREA": 0.00222540589849962,
+        "PERIMETER": 0.265490004701577,
+        "TZ48_D00_": 11673,
+        "TZ48_D00_I": 11672,
+        "STATE": "48",
+        "COUNTY": "201",
+        "TAZ": "  1440",
+        "NAME": "  1440",
+        "LSAD": " ",
+        "LSAD_TRANS": " ",
+        "Shape_Length": 0.2654900057804029,
+        "Shape_Area": 0.002225405902275329,
+        "METRO_SERVICE": 1,
+        "METRO_LIFT": null,
+        "METRO_LFIT2": null,
+        "ODAREA": "WALLER / HOCKLEY"
+      }
+    ],
+    "property_keys": [
+      "OBJECTID",
+      "AREA",
+      "PERIMETER",
+      "TZ48_D00_",
+      "TZ48_D00_I",
+      "STATE",
+      "COUNTY",
+      "TAZ",
+      "NAME",
+      "LSAD",
+      "LSAD_TRANS",
+      "Shape_Length",
+      "Shape_Area",
+      "METRO_SERVICE",
+      "METRO_LIFT",
+      "METRO_LFIT2",
+      "ODAREA"
+    ],
+    "null_counts": {
+      "OBJECTID": 0,
+      "AREA": 0,
+      "PERIMETER": 0,
+      "TZ48_D00_": 0,
+      "TZ48_D00_I": 0,
+      "STATE": 0,
+      "COUNTY": 0,
+      "TAZ": 0,
+      "NAME": 0,
+      "LSAD": 0,
+      "LSAD_TRANS": 0,
+      "Shape_Length": 0,
+      "Shape_Area": 0,
+      "METRO_SERVICE": 19,
+      "METRO_LIFT": 167,
+      "METRO_LFIT2": 306,
+      "ODAREA": 0
+    },
+    "unique_counts": {
+      "OBJECTID": 1239,
+      "AREA": 1237,
+      "PERIMETER": 1237,
+      "TZ48_D00_": 1239,
+      "TZ48_D00_I": 1239,
+      "STATE": 1,
+      "COUNTY": 4,
+      "TAZ": 1239,
+      "NAME": 1239,
+      "LSAD": 1,
+      "LSAD_TRANS": 1,
+      "Shape_Length": 1239,
+      "Shape_Area": 1239,
+      "METRO_SERVICE": 2,
+      "METRO_LIFT": 2,
+      "METRO_LFIT2": 2,
+      "ODAREA": 113
+    }
+  },
+  {
+    "path": "RAW/pnr_esrigj/METRO_PnR_pt.geojson",
+    "bytes": 17513,
+    "top_keys": [
+      "type",
+      "features"
+    ],
+    "feature_count": 27,
+    "fields": null,
+    "geometry_type": null,
+    "spatial_reference": null,
+    "sample_properties": [
+      {
+        "OBJECTID": 1,
+        "PRKNRD_ID": 12,
+        "NAME1": "Addicks",
+        "NAME2": "ADDICKS",
+        "ADDRESS": "14230 OLD KATY RD",
+        "ZIP_CODE": 77079,
+        "OWNER": "METRO",
+        "TOTAL_ACRE": 30.3,
+        "B_BAYS": 4,
+        "CANOPY": "Y",
+        "SEAT": "Y",
+        "KIOSK": "Y",
+        "PSPACES": 1999,
+        "BIKERACK": "Y",
+        "TEL": "Y",
+        "RESTRM": "Y",
+        "SECBOOTH": "Y",
+        "COMMENTS": " ",
+        "ROUTES_SER": "- 75 162 228 229 298 -",
+        "KEYMAP": "488A",
+        "BusStopID": 88,
+        "FareZone": 3,
+        "GlobalID": "{5D07144A-EE1B-4E22-826A-EF866799070F}",
+        "created_user": null,
+        "created_date": null,
+        "last_edited_user": "vw08",
+        "last_edited_date": 1454430573000
+      },
+      {
+        "OBJECTID": 2,
+        "PRKNRD_ID": 3,
+        "NAME1": "Townsen",
+        "NAME2": "TOWNSEN",
+        "ADDRESS": "EASTEX FREEWAY & TOWNSEN BL",
+        "ZIP_CODE": 77338,
+        "OWNER": "TXDOT ROW",
+        "TOTAL_ACRE": 20,
+        "B_BAYS": 4,
+        "CANOPY": "Y",
+        "SEAT": "Y ",
+        "KIOSK": "Y ",
+        "PSPACES": 996,
+        "BIKERACK": "Y",
+        "TEL": "Y",
+        "RESTRM": "Y",
+        "SECBOOTH": "Y",
+        "COMMENTS": " ",
+        "ROUTES_SER": "- 256 257 259 -",
+        "KEYMAP": "335R",
+        "BusStopID": 10706,
+        "FareZone": 3,
+        "GlobalID": "{7CB2E540-2DE1-4242-BCDD-306CB719A80E}",
+        "created_user": null,
+        "created_date": null,
+        "last_edited_user": "vw08",
+        "last_edited_date": 1454436960000
+      }
+    ],
+    "property_keys": [
+      "OBJECTID",
+      "PRKNRD_ID",
+      "NAME1",
+      "NAME2",
+      "ADDRESS",
+      "ZIP_CODE",
+      "OWNER",
+      "TOTAL_ACRE",
+      "B_BAYS",
+      "CANOPY",
+      "SEAT",
+      "KIOSK",
+      "PSPACES",
+      "BIKERACK",
+      "TEL",
+      "RESTRM",
+      "SECBOOTH",
+      "COMMENTS",
+      "ROUTES_SER",
+      "KEYMAP",
+      "BusStopID",
+      "FareZone",
+      "GlobalID",
+      "created_user",
+      "created_date",
+      "last_edited_user",
+      "last_edited_date"
+    ],
+    "null_counts": {
+      "OBJECTID": 0,
+      "PRKNRD_ID": 1,
+      "NAME1": 0,
+      "NAME2": 1,
+      "ADDRESS": 0,
+      "ZIP_CODE": 0,
+      "OWNER": 0,
+      "TOTAL_ACRE": 6,
+      "B_BAYS": 4,
+      "CANOPY": 0,
+      "SEAT": 0,
+      "KIOSK": 5,
+      "PSPACES": 6,
+      "BIKERACK": 5,
+      "TEL": 5,
+      "RESTRM": 5,
+      "SECBOOTH": 5,
+      "COMMENTS": 5,
+      "ROUTES_SER": 4,
+      "KEYMAP": 5,
+      "BusStopID": 0,
+      "FareZone": 6,
+      "GlobalID": 0,
+      "created_user": 20,
+      "created_date": 20,
+      "last_edited_user": 5,
+      "last_edited_date": 5
+    },
+    "unique_counts": {
+      "OBJECTID": 27,
+      "PRKNRD_ID": 27,
+      "NAME1": 27,
+      "NAME2": 27,
+      "ADDRESS": 27,
+      "ZIP_CODE": 26,
+      "OWNER": 4,
+      "TOTAL_ACRE": 21,
+      "B_BAYS": 8,
+      "CANOPY": 2,
+      "SEAT": 2,
+      "KIOSK": 6,
+      "PSPACES": 22,
+      "BIKERACK": 5,
+      "TEL": 4,
+      "RESTRM": 5,
+      "SECBOOTH": 5,
+      "COMMENTS": 8,
+      "ROUTES_SER": 23,
+      "KEYMAP": 23,
+      "BusStopID": 27,
+      "FareZone": 5,
+      "GlobalID": 27,
+      "created_user": 5,
+      "created_date": 8,
+      "last_edited_user": 5,
+      "last_edited_date": 20
+    }
+  },
+  {
+    "path": "RAW/pnr_esrigj/METRO_PnR_Routes.json",
+    "bytes": 1346218,
+    "top_keys": [
+      "type",
+      "features"
+    ],
+    "feature_count": 25,
+    "fields": null,
+    "geometry_type": null,
+    "spatial_reference": null,
+    "sample_properties": [
+      {
+        "OBJECTID": 42,
+        "Id": 1,
+        "RouteNum": 204,
+        "RouteName": "Spring",
+        "Color": "ParkAndRide",
+        "ServType": "Park & Ride",
+        "PageOrient": "QUBg/ag72k",
+        "Dest_1": "Downtown",
+        "Dest_2": "Spring PR",
+        "Dest_3": " ",
+        "GlobalID": "{D77C6861-8B03-4083-A191-B36F7341FBAC}",
+        "created_user": null,
+        "created_date": null,
+        "last_edited_user": "JL83",
+        "last_edited_date": 1681416170000,
+        "STATUS": "Active",
+        "Shape_Length": 327883.9715511431,
+        "miles": 62.104823586409715
+      },
+      {
+        "OBJECTID": 44,
+        "Id": 1,
+        "RouteNum": 257,
+        "RouteName": "Townsen",
+        "Color": "ParkAndRide",
+        "ServType": "Park & Ride",
+        "PageOrient": "1GdqQUAy2w",
+        "Dest_1": "Downtown",
+        "Dest_2": "Townsen PR",
+        "Dest_3": " ",
+        "GlobalID": "{7E96330E-B714-471C-9325-9D53CB2E4ECE}",
+        "created_user": null,
+        "created_date": null,
+        "last_edited_user": "JL83",
+        "last_edited_date": 1681416170000,
+        "STATUS": "Active",
+        "Shape_Length": 354787.57355221716,
+        "miles": 67.20074604758697
+      }
+    ],
+    "property_keys": [
+      "OBJECTID",
+      "Id",
+      "RouteNum",
+      "RouteName",
+      "Color",
+      "ServType",
+      "PageOrient",
+      "Dest_1",
+      "Dest_2",
+      "Dest_3",
+      "GlobalID",
+      "created_user",
+      "created_date",
+      "last_edited_user",
+      "last_edited_date",
+      "STATUS",
+      "Shape_Length",
+      "miles"
+    ],
+    "null_counts": {
+      "OBJECTID": 0,
+      "Id": 0,
+      "RouteNum": 0,
+      "RouteName": 0,
+      "Color": 0,
+      "ServType": 0,
+      "PageOrient": 0,
+      "Dest_1": 0,
+      "Dest_2": 0,
+      "Dest_3": 5,
+      "GlobalID": 0,
+      "created_user": 9,
+      "created_date": 9,
+      "last_edited_user": 0,
+      "last_edited_date": 0,
+      "STATUS": 0,
+      "Shape_Length": 0,
+      "miles": 0
+    },
+    "unique_counts": {
+      "OBJECTID": 25,
+      "Id": 1,
+      "RouteNum": 25,
+      "RouteName": 25,
+      "Color": 1,
+      "ServType": 1,
+      "PageOrient": 25,
+      "Dest_1": 8,
+      "Dest_2": 21,
+      "Dest_3": 15,
+      "GlobalID": 25,
+      "created_user": 6,
+      "created_date": 16,
+      "last_edited_user": 2,
+      "last_edited_date": 12,
+      "STATUS": 1,
+      "Shape_Length": 25,
+      "miles": 25
+    }
+  },
+  {
+    "path": "RAW/pnr_plnfmm/ALL PNR.xlsx",
+    "bytes": 123084,
+    "sheets": [
+      {
+        "name": "DATA",
+        "rows": 47,
+        "columns": 33,
+        "nonempty_rows": 45,
+        "preview": [
+          {
+            "row": 2,
+            "values": [
+              null,
+              null,
+              "Organized per ",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              null,
+              null,
+              "Facility Name",
+              "Category",
+              "ADDRESS",
+              "SPACES_FMM",
+              "PRKNRD_ID",
+              null,
+              null,
+              "SVP_AZ",
+              "SVP_Rank",
+              "Facility Name",
+              "PNR",
+              "SPACES_SVP",
+              "SPACES_FMM",
+              "SPACES_TAM",
+              "SVP REPORTED DIFFERENCE",
+              null,
+              null,
+              "Bus Routes",
+              "PRKNRD_ID",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 5,
+            "values": [
+              null,
+              null,
+              "Addicks",
+              "LARGE",
+              "14230 Old Katy Road, Houston, TX 77079 ",
+              2386,
+              12,
+              null,
+              null,
+              42,
+              30,
+              "Westchase",
+              "=IF(VLOOKUP(L5,DATA_PNR[],1,FALSE)=L5,1,0)",
+              1468,
+              "=VLOOKUP(L5,DATA_PNR[],4,FALSE)",
+              "=VLOOKUP(Table2[[#This Row],[Facility Name]],TAM_PNR[[#All],[Facility Name]:[SPACES_TAM]],2,FALSE)",
+              null,
+              null,
+              null,
+              204,
+              27,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              null,
+              null,
+              "Bay Area",
+              "MEDIUM",
+              "801 Bay Area Boulevard, Houston, TX 77062",
+              1134,
+              24,
+              null,
+              null,
+              13,
+              10,
+              "Grand Parkway",
+              0,
+              1714,
+              "=VLOOKUP(L6,DATA_PNR[],4,FALSE)",
+              "=VLOOKUP(Table2[[#This Row],[Facility Name]],TAM_PNR[[#All],[Facility Name]:[SPACES_TAM]],2,FALSE)",
+              null,
+              null,
+              null,
+              257,
+              3,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 7,
+            "values": [
+              null,
+              null,
+              "Baytown",
+              "SMALL",
+              "6550 Garth Road, Baytown, TX 77521",
+              16,
+              2,
+              null,
+              null,
+              25,
+              null,
+              "Missouri City",
+              "=IF(VLOOKUP(L7,DATA_PNR[],1,FALSE)=L7,1,0)",
+              0,
+              "=VLOOKUP(L7,DATA_PNR[],4,FALSE)",
+              "=VLOOKUP(Table2[[#This Row],[Facility Name]],TAM_PNR[[#All],[Facility Name]:[SPACES_TAM]],2,FALSE)",
+              null,
+              null,
+              null,
+              292,
+              10,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 8,
+            "values": [
+              null,
+              null,
+              "Cypress",
+              "MEDIUM",
+              "25210 US-290 Frontage Road, Cypress, TX 77429",
+              1500,
+              1,
+              null,
+              null,
+              3,
+              3,
+              "Baytown",
+              "=IF(VLOOKUP(L8,DATA_PNR[],1,FALSE)=L8,1,0)",
+              125,
+              "=VLOOKUP(L8,DATA_PNR[],4,FALSE)",
+              "=VLOOKUP(Table2[[#This Row],[Facility Name]],TAM_PNR[[#All],[Facility Name]:[SPACES_TAM]],2,FALSE)",
+              null,
+              null,
+              null,
+              292,
+              11,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              "x"
+            ]
+          },
+          {
+            "row": 9,
+            "values": [
+              null,
+              null,
+              "Eastex",
+              "SMALL",
+              "14400 Old Humble Road, Humble, TX 77396",
+              870,
+              28,
+              null,
+              null,
+              5,
+              5,
+              "Cypress",
+              "=IF(VLOOKUP(L9,DATA_PNR[],1,FALSE)=L9,1,0)",
+              1487,
+              "=VLOOKUP(L9,DATA_PNR[],4,FALSE)",
+              "=VLOOKUP(Table2[[#This Row],[Facility Name]],TAM_PNR[[#All],[Facility Name]:[SPACES_TAM]],2,FALSE)",
+              null,
+              null,
+              null,
+              297,
+              93,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 10,
+            "values": [
+              null,
+              null,
+              "El Dorado",
+              "MEDIUM",
+              "203 El Dorado Boulevard, Friendswood, TX 77546 ",
+              1228,
+              33,
+              null,
+              null,
+              31,
+              null,
+              "Quitman",
+              "=IF(VLOOKUP(L10,DATA_PNR[],1,FALSE)=L10,1,0)",
+              "=VLOOKUP(Table2[[#This Row],[Facility Name]],SVP_Tallies,2,FALSE)",
+              "=VLOOKUP(L10,DATA_PNR[],4,FALSE)",
+              "=VLOOKUP(Table2[[#This Row],[Facility Name]],TAM_PNR[[#All],[Facility Name]:[SPACES_TAM]],2,FALSE)",
+              null,
+              null,
+              null,
+              297,
+              23,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 11,
+            "values": [
+              null,
+              null,
+              "Fuqua",
+              "SMALL",
+              "11755 Sabo Road, Houston, TX 77089 ",
+              912,
+              22,
+              null,
+              null,
+              7,
+              null,
+              "Eastwood TC",
+              0,
+              "=VLOOKUP(Table2[[#This Row],[Facility Name]],SVP_Tallies,2,FALSE)",
+              null,
+              "=VLOOKUP(Table2[[#This Row],[Facility Name]],TAM_PNR[[#All],[Facility Name]:[SPACES_TAM]],2,FALSE)",
+              null,
+              null,
+              null,
+              229,
+              13,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 12,
+            "values": [
+              null,
+              null,
+              "Gessner",
+              "SMALL",
+              "9925 Westpark Drive, Houston, TX 77063 ",
+              418,
+              91,
+              null,
+              null,
+              28,
+              20,
+              "Northline TC",
+              0,
+              145,
+              null,
+              "=VLOOKUP(Table2[[#This Row],[Facility Name]],TAM_PNR[[#All],[Facility Name]:[SPACES_TAM]],2,FALSE)",
+              null,
+              null,
+              null,
+              229,
+              12,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          }
+        ],
+        "formula_count": 124
+      },
+      {
+        "name": "DATES",
+        "rows": 24,
+        "columns": 13,
+        "nonempty_rows": 23,
+        "preview": [
+          {
+            "row": 2,
+            "values": [
+              "transposed",
+              null,
+              "tp_check",
+              null,
+              "Count_Check",
+              "Count_CODE",
+              "Count_Num",
+              "Fiscal Year",
+              "Calendar Year",
+              "Month",
+              "TC",
+              "Fixed Date",
+              "Notes"
+            ]
+          },
+          {
+            "row": 3,
+            "values": [
+              "Oct 2019",
+              null,
+              null,
+              null,
+              null,
+              "=((RIGHT(PNR_DateCheck[[#This Row],[Count_Num]],2)&PNR_DateCheck[[#This Row],[Fiscal Year]]&(LEFT(PNR_DateCheck[[#This Row],[Month]],3))))&PNR_DateCheck[[#This Row],[TC]]",
+              10001,
+              2024,
+              2023,
+              "October",
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              "Nov 2020",
+              null,
+              null,
+              null,
+              null,
+              "=((RIGHT(PNR_DateCheck[[#This Row],[Count_Num]],2)&PNR_DateCheck[[#This Row],[Fiscal Year]]&(LEFT(PNR_DateCheck[[#This Row],[Month]],3))))&PNR_DateCheck[[#This Row],[TC]]",
+              10002,
+              2025,
+              2024,
+              "October",
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 5,
+            "values": [
+              "Mar 2021",
+              null,
+              "October 2024",
+              null,
+              null,
+              "=((RIGHT(PNR_DateCheck[[#This Row],[Count_Num]],2)&PNR_DateCheck[[#This Row],[Fiscal Year]]&(LEFT(PNR_DateCheck[[#This Row],[Month]],3))))&PNR_DateCheck[[#This Row],[TC]]",
+              10003,
+              2025,
+              2025,
+              "March",
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              "Apr 2021",
+              null,
+              null,
+              null,
+              null,
+              "=((RIGHT(PNR_DateCheck[[#This Row],[Count_Num]],2)&PNR_DateCheck[[#This Row],[Fiscal Year]]&(LEFT(PNR_DateCheck[[#This Row],[Month]],3))))&PNR_DateCheck[[#This Row],[TC]]",
+              10004,
+              2021,
+              2021,
+              "November",
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 7,
+            "values": [
+              "May 2021",
+              null,
+              "February 2023",
+              null,
+              null,
+              "=((RIGHT(PNR_DateCheck[[#This Row],[Count_Num]],2)&PNR_DateCheck[[#This Row],[Fiscal Year]]&(LEFT(PNR_DateCheck[[#This Row],[Month]],3))))&PNR_DateCheck[[#This Row],[TC]]",
+              10005,
+              2021,
+              2021,
+              "November",
+              "TC",
+              null,
+              "With Transit Centers"
+            ]
+          },
+          {
+            "row": 8,
+            "values": [
+              "June 3, 2021",
+              null,
+              "October 2023",
+              null,
+              null,
+              "=((RIGHT(PNR_DateCheck[[#This Row],[Count_Num]],2)&PNR_DateCheck[[#This Row],[Fiscal Year]]&(LEFT(PNR_DateCheck[[#This Row],[Month]],3))))&PNR_DateCheck[[#This Row],[TC]]",
+              10006,
+              2021,
+              2021,
+              "March",
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 9,
+            "values": [
+              "June 10, 2021",
+              null,
+              "January 2022",
+              null,
+              null,
+              "=((RIGHT(PNR_DateCheck[[#This Row],[Count_Num]],2)&PNR_DateCheck[[#This Row],[Fiscal Year]]&(LEFT(PNR_DateCheck[[#This Row],[Month]],3))))&PNR_DateCheck[[#This Row],[TC]]",
+              10007,
+              2021,
+              2021,
+              "April",
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 10,
+            "values": [
+              "July 2021",
+              null,
+              "February 2022",
+              null,
+              null,
+              "=((RIGHT(PNR_DateCheck[[#This Row],[Count_Num]],2)&PNR_DateCheck[[#This Row],[Fiscal Year]]&(LEFT(PNR_DateCheck[[#This Row],[Month]],3))))&PNR_DateCheck[[#This Row],[TC]]",
+              10008,
+              2021,
+              2021,
+              "May",
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 11,
+            "values": [
+              "August 2021",
+              null,
+              "August 2022",
+              null,
+              null,
+              "=((RIGHT(PNR_DateCheck[[#This Row],[Count_Num]],2)&PNR_DateCheck[[#This Row],[Fiscal Year]]&(LEFT(PNR_DateCheck[[#This Row],[Month]],3))))&PNR_DateCheck[[#This Row],[TC]]",
+              10009,
+              2021,
+              2021,
+              "June",
+              null,
+              "2021-06-03 00:00:00",
+              null
+            ]
+          }
+        ],
+        "formula_count": 22
+      },
+      {
+        "name": "COUNTS",
+        "rows": 652,
+        "columns": 10,
+        "nonempty_rows": 652,
+        "preview": [
+          {
+            "row": 1,
+            "values": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              "Occupied Spaces",
+              "Empty Spaces",
+              "% Spaces Filled",
+              "% Spaces Remaining",
+              null
+            ]
+          },
+          {
+            "row": 2,
+            "values": [
+              null,
+              "Count_CODE",
+              "SVP_Rank",
+              "Facility Name",
+              "SPACES_SVP",
+              "SPACES_OCC",
+              "SPACES_EMPTY",
+              "CALC_OCC_PCT",
+              "CALC_EMPTY_PCT",
+              "EXCLUDE"
+            ]
+          },
+          {
+            "row": 3,
+            "values": [
+              null,
+              "012024Oct",
+              1,
+              "Addicks",
+              2438,
+              483,
+              "=DATA_RAW_Counts[[#This Row],[SPACES_SVP]]-DATA_RAW_Counts[[#This Row],[SPACES_OCC]]",
+              "=DATA_RAW_Counts[[#This Row],[SPACES_OCC]]/DATA_RAW_Counts[[#This Row],[SPACES_SVP]]",
+              "=DATA_RAW_Counts[[#This Row],[SPACES_EMPTY]]/DATA_RAW_Counts[[#This Row],[SPACES_SVP]]",
+              null
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              null,
+              "012024Oct",
+              2,
+              "Bay Area",
+              1155,
+              164,
+              "=DATA_RAW_Counts[[#This Row],[SPACES_SVP]]-DATA_RAW_Counts[[#This Row],[SPACES_OCC]]",
+              "=DATA_RAW_Counts[[#This Row],[SPACES_OCC]]/DATA_RAW_Counts[[#This Row],[SPACES_SVP]]",
+              "=DATA_RAW_Counts[[#This Row],[SPACES_EMPTY]]/DATA_RAW_Counts[[#This Row],[SPACES_SVP]]",
+              null
+            ]
+          },
+          {
+            "row": 5,
+            "values": [
+              null,
+              "012024Oct",
+              3,
+              "Baytown",
+              125,
+              7,
+              "=DATA_RAW_Counts[[#This Row],[SPACES_SVP]]-DATA_RAW_Counts[[#This Row],[SPACES_OCC]]",
+              "=DATA_RAW_Counts[[#This Row],[SPACES_OCC]]/DATA_RAW_Counts[[#This Row],[SPACES_SVP]]",
+              "=DATA_RAW_Counts[[#This Row],[SPACES_EMPTY]]/DATA_RAW_Counts[[#This Row],[SPACES_SVP]]",
+              null
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              null,
+              "012024Oct",
+              4,
+              "Conroe",
+              294,
+              62,
+              "=DATA_RAW_Counts[[#This Row],[SPACES_SVP]]-DATA_RAW_Counts[[#This Row],[SPACES_OCC]]",
+              "=DATA_RAW_Counts[[#This Row],[SPACES_OCC]]/DATA_RAW_Counts[[#This Row],[SPACES_SVP]]",
+              "=DATA_RAW_Counts[[#This Row],[SPACES_EMPTY]]/DATA_RAW_Counts[[#This Row],[SPACES_SVP]]",
+              null
+            ]
+          },
+          {
+            "row": 7,
+            "values": [
+              null,
+              "012024Oct",
+              5,
+              "Cypress",
+              1487,
+              882,
+              "=DATA_RAW_Counts[[#This Row],[SPACES_SVP]]-DATA_RAW_Counts[[#This Row],[SPACES_OCC]]",
+              "=DATA_RAW_Counts[[#This Row],[SPACES_OCC]]/DATA_RAW_Counts[[#This Row],[SPACES_SVP]]",
+              "=DATA_RAW_Counts[[#This Row],[SPACES_EMPTY]]/DATA_RAW_Counts[[#This Row],[SPACES_SVP]]",
+              null
+            ]
+          },
+          {
+            "row": 8,
+            "values": [
+              null,
+              "012024Oct",
+              6,
+              "Eastex",
+              877,
+              199,
+              "=DATA_RAW_Counts[[#This Row],[SPACES_SVP]]-DATA_RAW_Counts[[#This Row],[SPACES_OCC]]",
+              "=DATA_RAW_Counts[[#This Row],[SPACES_OCC]]/DATA_RAW_Counts[[#This Row],[SPACES_SVP]]",
+              "=DATA_RAW_Counts[[#This Row],[SPACES_EMPTY]]/DATA_RAW_Counts[[#This Row],[SPACES_SVP]]",
+              null
+            ]
+          },
+          {
+            "row": 9,
+            "values": [
+              null,
+              "012024Oct",
+              7,
+              "El Dorado",
+              1227,
+              213,
+              "=DATA_RAW_Counts[[#This Row],[SPACES_SVP]]-DATA_RAW_Counts[[#This Row],[SPACES_OCC]]",
+              "=DATA_RAW_Counts[[#This Row],[SPACES_OCC]]/DATA_RAW_Counts[[#This Row],[SPACES_SVP]]",
+              "=DATA_RAW_Counts[[#This Row],[SPACES_EMPTY]]/DATA_RAW_Counts[[#This Row],[SPACES_SVP]]",
+              null
+            ]
+          },
+          {
+            "row": 10,
+            "values": [
+              null,
+              "012024Oct",
+              8,
+              "Fuqua",
+              938,
+              172,
+              "=DATA_RAW_Counts[[#This Row],[SPACES_SVP]]-DATA_RAW_Counts[[#This Row],[SPACES_OCC]]",
+              "=DATA_RAW_Counts[[#This Row],[SPACES_OCC]]/DATA_RAW_Counts[[#This Row],[SPACES_SVP]]",
+              "=DATA_RAW_Counts[[#This Row],[SPACES_EMPTY]]/DATA_RAW_Counts[[#This Row],[SPACES_SVP]]",
+              null
+            ]
+          }
+        ],
+        "formula_count": 1902
+      },
+      {
+        "name": "SUMMARY",
+        "rows": 289,
+        "columns": 10,
+        "nonempty_rows": 268,
+        "preview": [
+          {
+            "row": 22,
+            "values": [
+              null,
+              "UNIQUE COUNTS",
+              null,
+              null,
+              "SVP_AZ",
+              "Facility Name",
+              "SPACES_TAM",
+              null,
+              "PRKNRD_ID",
+              "DissolvedID"
+            ]
+          },
+          {
+            "row": 23,
+            "values": [
+              null,
+              "Addicks",
+              null,
+              null,
+              1,
+              "Addicks",
+              2386,
+              null,
+              12,
+              1006
+            ]
+          },
+          {
+            "row": 24,
+            "values": [
+              null,
+              "Bay Area",
+              null,
+              null,
+              2,
+              "Bay Area",
+              1134,
+              null,
+              12,
+              1018
+            ]
+          },
+          {
+            "row": 25,
+            "values": [
+              null,
+              "Baytown",
+              null,
+              null,
+              3,
+              "Baytown",
+              null,
+              null,
+              12,
+              1028
+            ]
+          },
+          {
+            "row": 26,
+            "values": [
+              null,
+              "Conroe",
+              null,
+              null,
+              5,
+              "Cypress",
+              null,
+              null,
+              12,
+              1042
+            ]
+          },
+          {
+            "row": 27,
+            "values": [
+              null,
+              "Cypress",
+              null,
+              null,
+              6,
+              "Eastex",
+              870,
+              null,
+              12,
+              1064
+            ]
+          },
+          {
+            "row": 28,
+            "values": [
+              null,
+              "Eastex",
+              null,
+              null,
+              7,
+              "Eastwood TC",
+              null,
+              null,
+              12,
+              1114
+            ]
+          },
+          {
+            "row": 29,
+            "values": [
+              null,
+              "Eastwood TC",
+              null,
+              null,
+              8,
+              "El Dorado",
+              1228,
+              null,
+              12,
+              1134
+            ]
+          },
+          {
+            "row": 30,
+            "values": [
+              null,
+              "El Dorado",
+              null,
+              null,
+              9,
+              "Fannin South ",
+              1422,
+              null,
+              12,
+              1142
+            ]
+          },
+          {
+            "row": 31,
+            "values": [
+              null,
+              "Fannin South ",
+              null,
+              null,
+              10,
+              "Fifth Ward / Denver Habor TC",
+              24,
+              null,
+              12,
+              1186
+            ]
+          }
+        ],
+        "formula_count": 0
+      }
+    ]
+  },
+  {
+    "path": "RAW/pnr_plnfmm/ddapi_plan.csv",
+    "bytes": 259044,
+    "rows": 3709,
+    "headers": [
+      "plan_id",
+      "project_id",
+      "name"
+    ],
+    "preview": [
+      [
+        "660203fcf0d1164f2ca21f49",
+        "65fafd301de14e6abc572745",
+        "VID_20240323_134238_00_036"
+      ],
+      [
+        "65983420e94c7f7aca4c695e",
+        "659833f8e94c7f7aca4c695d",
+        "Kuyk Survey Map"
+      ],
+      [
+        "66fd6677b197fd361b3564e3",
+        "66fd6658b197fd361b3564e2",
+        "Map Plan"
+      ]
+    ]
+  },
+  {
+    "path": "RAW/pnr_plnfmm/ddapi_project.csv",
+    "bytes": 23044,
+    "rows": 221,
+    "headers": [
+      "project_id",
+      "name",
+      "location_lat",
+      "location_lng",
+      "lvl1_folder_name",
+      "lvl2_folder_name",
+      "Facility Name"
+    ],
+    "preview": [
+      [
+        "65c50fa217144c6a16361440",
+        "Redline Pierce to Lamar",
+        "29.75018736",
+        "-95.37086816",
+        "Rail MOW",
+        "",
+        ""
+      ],
+      [
+        "671fa2c5b5247320c579b91a",
+        "Segment 38 and 39 Westheimer Plaza Dr West",
+        "29.70854181",
+        "-95.67455113",
+        "Undeveloped Properties",
+        "",
+        ""
+      ],
+      [
+        "66fd5b18b197fd361b3564d5",
+        "Segment 18 a and b Alder to Renwick",
+        "29.72411433",
+        "-95.48245668",
+        "Undeveloped Properties",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "path": "README.md",
+    "bytes": 205,
+    "text": "# TransitTAZExplorer\n Traffic Analysis Zone Explorer for Transit Services\n\n# Concept Pitch Deck \n\n[View PDF](./TAZTransitExplorer.pdf)\n\n<embed src=\"./TAZTransitExplorer.pdf\" width=\"100%\" height=\"1000px\"/>\n"
+  },
+  {
+    "path": "TAZTransitExplorer.pdf",
+    "bytes": 810948,
+    "pages": [
+      {
+        "page": 1,
+        "text": "DASHBOARD CHALLENGE\nTAZ TRANSIT EXPLORER\n\u21923/21/25"
+      },
+      {
+        "page": 2,
+        "text": "WHY\n\u2022 Query information about riders by varied levels of aggregation\n\u2022 Visualize the context behind Origin-Destination within Transit \nService Area\n\u2022 Link commuter information to regional mobility information\n2\nSKILLS/TECH STACK\n\u2022 GIS, BI, python\n\u2022 Database Management (csv,xlsx into sql) "
+      },
+      {
+        "page": 3,
+        "text": "SERVICE AREA BY HGAC 25 SECTORS\nHGAC 25 Sectors is the \nlargest level of \naggregation under \nmember county. \nO-D Data is summarized by \nHGAC  25 Sectors and \nH3M hexagonal\nSELECT SECTOR\n\u2192PnR Ridership\n\u2192Demographic stats\n\u2192DRILL DOWN\n"
+      },
+      {
+        "page": 4,
+        "text": "SERVICE BY METRO O-D ZONES\nMETRO Draft  inspired by City \nof Houston\u2019s Super \nNeighborhoods, offers first time \nto use TAZ to generate a nested \naggregation for Origin-\nDestination Zones. Based on \nthe selected SECTOR, shows \nthe most central Park And Ride. \nSELECT TAZ\n\u2192Demographic stats\n\u2192DRILL DOWN TO \nREPORT OPTIONS\n"
+      },
+      {
+        "page": 5,
+        "text": "TOP 3 DESTINATIONS FOR TAZ\nWe know that people that originate from the TAZ took the park and ride. \nBut based on O-D data, what are their top 3 TAZ destinations?\n5\nFor Each top three\n\u2192Nearest PnR? \n\u2192Nearest Bus Stop?\n\u2192Major attractions?\nREPORT 2"
+      },
+      {
+        "page": 6,
+        "text": "O-D ZONE DRIVESHED\nHow does the PnR Compare with single occupancy vehicles?\n6\nFor selected taz\n\u2192Travel Time to PnR \ndestination?\n\u2192Drivesheds using PnR \ntravel time? \n\u2192Routes connecting?\n\u2192OTP for route?\nREPORT 3"
+      },
+      {
+        "page": 7,
+        "text": "O-D MARKET ANALYSIS\n7\nCan demographics inform untapped market for new riders?\nFor the selected \ndriveshed, show \ndemographics within\n\u2192% attributed to each    \nO-D Area\n\u2192Ranking between PnR \nalong corridors?\n\u2192See most comparable \nPnR elsewhere in system\nOVERVIEW"
+      }
+    ]
+  }
+]
